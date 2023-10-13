@@ -1,6 +1,4 @@
-CREATE DATABASE Planetario;
-
-CREATE DATABASE ViajesEspaciales;
+CREATE DATABASE Planetario
 
 USE Planetario
 
