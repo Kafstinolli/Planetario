@@ -46,3 +46,5 @@ CREATE TABLE PlanetarioSatelites
 	,FOREIGN KEY (PlanetarioSatelites_PlanetarioId) REFERENCES Planetario (Planetario_Id)
 	,FOREIGN KEY (PlanetarioSatelites_SateliteId) REFERENCES Satelite (Satelite_Id)
 )
+
+SELECT * FROM PlanetarioPlanetas

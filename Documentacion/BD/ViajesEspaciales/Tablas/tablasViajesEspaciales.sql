@@ -34,3 +34,5 @@ CREATE TABLE Mision
 	,FOREIGN KEY (Mision_AstronautaId) REFERENCES Astronauta (Astronauta_Id)
 	,FOREIGN KEY (Mision_ObjetivoId) REFERENCES Objetivo (Objetivo_Id)
 )
+
+SELECT * FROM Profesion
