@@ -27,3 +27,12 @@ INSERT INTO
 VALUES
 	(1,1)
 	,(1,3)
+
+INSERT INTO
+	PlanetarioPlanetas(PlanetarioPlanetas_PlanetarioId, PlanetarioPlanetas_PlanetaId)
+VALUES
+	(1,1)
+	,(1,2)
+	,(1,3)
+
+	
