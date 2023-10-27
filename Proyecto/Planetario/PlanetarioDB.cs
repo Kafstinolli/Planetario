@@ -1,6 +1,6 @@
 using System.Data.SqlClient;
 
-internal abstract class PlanetarioDB
+public abstract class PlanetarioDB
 {
     private string _connectionString;
     protected SqlConnection _connection;

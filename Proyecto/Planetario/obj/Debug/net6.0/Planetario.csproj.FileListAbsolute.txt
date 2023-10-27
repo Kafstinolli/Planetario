@@ -1,0 +1,5 @@
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.csproj.AssemblyReference.cache
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.AssemblyInfoInputs.cache
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.AssemblyInfo.cs
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.csproj.CoreCompileInputs.cache
