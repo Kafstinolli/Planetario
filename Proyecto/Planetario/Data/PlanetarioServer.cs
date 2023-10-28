@@ -7,12 +7,12 @@ public class PlanetarioServer : PlanetarioConnection
 {
     public PlanetarioServer(string server, string user, string password) : base(server, user, password) { }
 
-    public List<Planeta> GetAllPlanetas()
+    public List<Planeta> GetAllPlanetas(string queryP)
     {
         Connect();
 
         List<Planeta> planetas = new List<Planeta>();
-        string query = "SELECT Planeta_Id, Planeta_Nombre, Planeta_DistanciaSol, Planeta_PeriodoOrbital, Planeta_VelocidadOrbital, Planeta_InclinacionOrbital FROM Planeta";
+        string query = queryP;
         SqlCommand command = new SqlCommand(query, _connection);
 
         SqlDataReader reader = command.ExecuteReader();
