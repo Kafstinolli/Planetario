@@ -1,15 +1,18 @@
 using System.Data.Common;
+using Planetario.Backend;
 using Planetario.Data;
 
 namespace Planetario.LoadBalancing;
 
-public abstract class LoadBalancer
+public class LoadBalancer
 {
-    public void SELECT(PlanetarioServer? planetarioServer)
+    private PlanetarioController _planetarioController = new PlanetarioController();
+    public void prueba(Request request)
     {
-        if (planetarioServer != null)
+        if (request.Id == "planetario")
         {
-
+            PlanetarioServer planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
+            _planetarioController.Show(planetarioServer, request.Nombre);
         }
     }
 }
