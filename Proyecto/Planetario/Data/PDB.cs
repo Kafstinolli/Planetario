@@ -15,7 +15,6 @@ public class PDB : PlanetarioDB
 
         while (reader.Read())
         {
-            x
         }
         CloseConnection();
 
