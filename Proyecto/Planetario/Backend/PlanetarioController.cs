@@ -3,13 +3,13 @@ using Planetario.Models;
 
 namespace Planetario.Backend;
 
-public static class PlanetarioController
+public class PlanetarioController
 {
-    public static void Show(PlanetarioServer planetarioServer)
+    public void Show(PlanetarioServer planetarioServer, string query)
     {
         Console.Clear();
 
-        List<Planeta> planetas = planetarioServer.GetAllPlanetas();
+        List<Planeta> planetas = planetarioServer.GetAllPlanetas(query);
 
         foreach (Planeta planeta in planetas)
         {
