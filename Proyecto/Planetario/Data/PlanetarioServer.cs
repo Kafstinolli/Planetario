@@ -1,8 +1,8 @@
 using System.Data.SqlClient;
 
-public class PDB : PlanetarioDB
+public class PlanetarioServer : PlanetarioConnection
 {
-    public PDB(string server, string user, string password) : base(server, user, password) { }
+    public PlanetarioServer(string server, string user, string password) : base(server, user, password) { }
 
     public List<Planeta> GetAllPlanetas()
     {

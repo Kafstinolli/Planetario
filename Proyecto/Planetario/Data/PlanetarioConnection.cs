@@ -1,11 +1,11 @@
 using System.Data.SqlClient;
 
-public abstract class PlanetarioDB
+public abstract class PlanetarioConnection
 {
     private string _connectionString;
     protected SqlConnection _connection;
 
-    public PlanetarioDB(string server, string user, string password)
+    public PlanetarioConnection(string server, string user, string password)
     {
         _connectionString = $"Data Source={server}; Initial Catalog=Planetario; User={user};Password={password}";
         // Revisar que el nombre de la base de datos (initial catalog) sea el que se configuró en la creación de la BD localmente
