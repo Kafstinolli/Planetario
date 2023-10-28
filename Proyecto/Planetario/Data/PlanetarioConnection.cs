@@ -8,7 +8,6 @@ public abstract class PlanetarioConnection
     public PlanetarioConnection(string server, string user, string password)
     {
         _connectionString = $"Data Source={server}; Initial Catalog=Planetario; User={user};Password={password}";
-        // Revisar que el nombre de la base de datos (initial catalog) sea el que se configuró en la creación de la BD localmente
     }
 
     public void Connect()
