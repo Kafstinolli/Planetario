@@ -1,4 +1,7 @@
 using System.Data.SqlClient;
+using Planetario.Models;
+
+namespace Planetario.Data;
 
 public class PlanetarioServer : PlanetarioConnection
 {

@@ -1,3 +1,5 @@
+namespace Planetario.Models;
+
 public class Planeta
 {
     public int Id { get; set; }

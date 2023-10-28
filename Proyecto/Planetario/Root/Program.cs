@@ -1,4 +1,7 @@
-﻿internal class Program
+﻿using Planetario.Data;
+using Planetario.Models;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
