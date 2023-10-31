@@ -20,3 +20,25 @@ C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestr
 C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.pdb
 C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.genruntimeconfig.cache
 C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\obj\Debug\net6.0\ref\Planetario.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\Planetario.exe
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\Planetario.deps.json
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\Planetario.runtimeconfig.json
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\Planetario.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\Planetario.pdb
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.csproj.AssemblyReference.cache
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.AssemblyInfoInputs.cache
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.AssemblyInfo.cs
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.csproj.CoreCompileInputs.cache
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.csproj.CopyComplete
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\refint\Planetario.dll
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.pdb
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.genruntimeconfig.cache
+C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\obj\Debug\net6.0\ref\Planetario.dll

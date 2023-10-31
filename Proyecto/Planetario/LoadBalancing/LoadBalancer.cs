@@ -11,7 +11,18 @@ public class LoadBalancer
     {
         if (request.Id == "planetario")
         {
-            PlanetarioServer planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
+            //  Conexión Santiago:
+            //  PlanetarioServer planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12"); 
+
+            //  Conexión Mateo:
+            PlanetarioServer planetarioServer = new PlanetarioServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
+
+            //  Conexión Juanes:
+
+            //  Conexión Ximena:
+
+            //  Conexión Andrés:
+
             _planetarioController.Show(planetarioServer, request.Nombre);
         }
     }
