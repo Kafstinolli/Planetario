@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ximde\\Documents\\UAN\\Programación\\Planetario\\Proyecto\\Planetario\\Planetario.csproj": {}
+    "C:\\Users\\equipo\\OneDrive\\Documentos\\Poo\\Proyecto\\Planetario\\Planetario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ximde\\Documents\\UAN\\Programación\\Planetario\\Proyecto\\Planetario\\Planetario.csproj": {
+    "C:\\Users\\equipo\\OneDrive\\Documentos\\Poo\\Proyecto\\Planetario\\Planetario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ximde\\Documents\\UAN\\Programación\\Planetario\\Proyecto\\Planetario\\Planetario.csproj",
+        "projectUniqueName": "C:\\Users\\equipo\\OneDrive\\Documentos\\Poo\\Proyecto\\Planetario\\Planetario.csproj",
         "projectName": "Planetario",
-        "projectPath": "C:\\Users\\ximde\\Documents\\UAN\\Programación\\Planetario\\Proyecto\\Planetario\\Planetario.csproj",
-        "packagesPath": "C:\\Users\\ximde\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ximde\\Documents\\UAN\\Programación\\Planetario\\Proyecto\\Planetario\\obj\\",
+        "projectPath": "C:\\Users\\equipo\\OneDrive\\Documentos\\Poo\\Proyecto\\Planetario\\Planetario.csproj",
+        "packagesPath": "C:\\Users\\equipo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\equipo\\OneDrive\\Documentos\\Poo\\Proyecto\\Planetario\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ximde\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\equipo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,6 +56,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.24, 6.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.24, 6.0.24]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.24, 6.0.24]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.24, 6.0.24]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
