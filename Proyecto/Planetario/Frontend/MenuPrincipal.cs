@@ -33,7 +33,7 @@ public class MenuPrincipal
                     break;
 
                 default:
-                    MostrarMenuPrincipal();
+                    //  MostrarMenuPrincipal();
                     Console.WriteLine("Seleccione una opción valida");
                     break;
             }
