@@ -17,14 +17,14 @@ public class LoadBalancer
             //  Conexión Mateo:
             //  PlanetarioServer planetarioServer = new PlanetarioServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
 
-            //  Conexión Juanes:
+            //  Conexión Juanes: 
 
             //  Conexión Ximena:
             //  PlanetarioServer planetarioServer = new PlanetarioServer("LAPTOP-0G61ILIU\\SQLEXPRESS", "sa", "sql123");
             // :( 
 
             //  Conexión Andrés:
-            PlanetarioServer planetarioServer = new PlanetarioServer("ANDRES\\SQLEXPRESS", "sa", "Kilian16");
+            //  PlanetarioServer planetarioServer = new PlanetarioServer("ANDRES\\SQLEXPRESS", "sa", "Kilian16");
 
             _planetarioController.Show(planetarioServer, request.Nombre);
         }
