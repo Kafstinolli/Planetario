@@ -1,3 +1,5 @@
+namespace Planetario.LoadBalancing;
+
 public class Request
 {
     public string Nombre { get; }
