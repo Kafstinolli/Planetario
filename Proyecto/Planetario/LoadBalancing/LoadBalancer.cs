@@ -24,7 +24,7 @@ public class LoadBalancer
             // :( 
 
             //  Conexión Andrés:
-            //  PlanetarioServer planetarioServer = new PlanetarioServer("ANDRES\\SQLEXPRESS", "sa", "Kilian16");
+              PlanetarioServer planetarioServer = new PlanetarioServer("ANDRES\\SQLEXPRESS", "sa", "Kilian16");
 
             _planetarioController.Show(planetarioServer, request.Nombre);
         }
