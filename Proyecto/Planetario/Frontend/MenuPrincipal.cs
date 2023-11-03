@@ -2,6 +2,8 @@ namespace Planetario.Frontend;
 
 public class MenuPrincipal
 {
+    MenuPlanetario menu1 = new MenuPlanetario();
+
     private int _opcionUsuario = 9;
 
     public void MostrarMenuPrincipal()
@@ -22,6 +24,7 @@ public class MenuPrincipal
             {
                 case 1:
                     Console.WriteLine("Menu Planetario");
+                    menu1.MostrarMenuPlanetario();
                     break;
 
                 case 2:
