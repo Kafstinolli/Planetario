@@ -4,8 +4,8 @@ namespace Planetario.Frontend;
 
 public class MenuPrincipal
 {
-    MenuPlanetario menu1 = new MenuPlanetario();
-    MenuViajesEspaciales menu2 = new MenuViajesEspaciales();
+    MenuPlanetario menuPlanetario = new MenuPlanetario();
+    MenuViajesEspaciales menuViajesEspaciales = new MenuViajesEspaciales();
 
     private int _opcionUsuario = 9;
 
@@ -28,11 +28,11 @@ public class MenuPrincipal
             switch (_opcionUsuario)
             {
                 case 1:
-                    menu1.MostrarMenuPlanetario();
+                    menuPlanetario.MostrarMenuPlanetario();
                     break;
 
                 case 2:
-                    menu2.MostrarMenuViajesEspaciales();
+                    menuViajesEspaciales.MostrarMenuViajesEspaciales();
                     break;
 
                 case 0:

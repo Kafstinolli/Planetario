@@ -5,6 +5,7 @@ namespace Planetario.Frontend;
 
 public class MenuPlanetario
 {
+    MenuRegistrarSatelite MenuRegistrarSatelite = new MenuRegistrarSatelite();
     private int _opcionUsuario = 3;
     public void MostrarMenuPlanetario()
     {
@@ -26,6 +27,7 @@ public class MenuPlanetario
             switch (_opcionUsuario)
             {
                 case 1:
+                    MenuRegistrarSatelite.MostrarMenu();
                     break;
 
                 case 2:
