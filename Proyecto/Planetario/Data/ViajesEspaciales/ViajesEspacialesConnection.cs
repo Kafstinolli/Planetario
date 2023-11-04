@@ -9,7 +9,7 @@ namespace Planetario.Data.ViajesEspaciales
 
         public ViajesEspacialesConnection(string server, string user, string password)
         {
-            _connectionString = $"Data Source={server};Initial Catalog=ViajesEspaciales;User Id={user};Password={password}";
+            _connectionString = $"Data Source={server};Initial Catalog=ViajesEspaciales;User={user};Password={password}";
         }
         
         public void Connect()

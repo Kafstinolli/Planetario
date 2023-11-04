@@ -1,5 +1,5 @@
 using Planetario.Data.Planetario;
-using Planetario.Models;
+using Planetario.Models.Planetario;
 
 namespace Planetario.Backend;
 

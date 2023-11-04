@@ -1,5 +1,5 @@
 using System.Data.SqlClient;
-using Planetario.Models;
+using Planetario.Models.Planetario;
 
 namespace Planetario.Data.Planetario;
 
