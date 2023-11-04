@@ -12,10 +12,10 @@ public class MenuPrincipal
     public void MostrarMenuPrincipal()
     {
         Console.Clear();
+        Console.WriteLine("Menu Principal");
 
         while (_opcionUsuario != 0)
         {
-            Console.WriteLine("Menu Principal");
             Console.WriteLine("1. Planetario");
             Console.WriteLine("2. Viajes espaciales");
             Console.WriteLine("0. Salir");
@@ -23,16 +23,15 @@ public class MenuPrincipal
 
 
             _opcionUsuario = Convert.ToInt32(Console.ReadLine());
-            Console.Clear();
 
             switch (_opcionUsuario)
             {
                 case 1:
-                    menuPlanetario.MostrarMenuPlanetario();
+                    menuPlanetario.MostrarMenu();
                     break;
 
                 case 2:
-                    menuViajesEspaciales.MostrarMenuViajesEspaciales();
+                    menuViajesEspaciales.MostrarMenu();
                     break;
 
                 case 0:
@@ -40,7 +39,7 @@ public class MenuPrincipal
                     break;
 
                 default:
-                    //  MostrarMenuPrincipal();
+                    MostrarMenuPrincipal();
                     Console.WriteLine("Seleccione una opción valida");
                     break;
             }

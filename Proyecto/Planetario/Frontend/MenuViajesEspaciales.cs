@@ -5,7 +5,7 @@ namespace Planetario.Frontend
     public class MenuViajesEspaciales
     {
         private int _opcionUsuario = 3;
-        public void MostrarMenuViajesEspaciales()
+        public void MostrarMenu()
         {
             Console.Clear();
 

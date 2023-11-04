@@ -7,7 +7,7 @@ public class MenuPlanetario
 {
     MenuRegistrarSatelite MenuRegistrarSatelite = new MenuRegistrarSatelite();
     private int _opcionUsuario = 3;
-    public void MostrarMenuPlanetario()
+    public void MostrarMenu()
     {
         Console.Clear();        
 
