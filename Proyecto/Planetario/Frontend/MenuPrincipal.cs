@@ -1,3 +1,5 @@
+using System;
+
 namespace Planetario.Frontend;
 
 public class MenuPrincipal
@@ -11,21 +13,21 @@ public class MenuPrincipal
     {
         Console.Clear();
 
-        Console.WriteLine("Menu Principal");
-        Console.WriteLine("Seleccione una opcion: ");
-
         while (_opcionUsuario != 0)
         {
+            Console.WriteLine("Menu Principal");
             Console.WriteLine("1. Planetario");
             Console.WriteLine("2. Viajes espaciales");
             Console.WriteLine("0. Salir");
+            Console.WriteLine("Seleccione una opcion: ");
+
 
             _opcionUsuario = Convert.ToInt32(Console.ReadLine());
+            Console.Clear();
 
             switch (_opcionUsuario)
             {
                 case 1:
-                    Console.WriteLine("Menu Planetario");
                     menu1.MostrarMenuPlanetario();
                     break;
 

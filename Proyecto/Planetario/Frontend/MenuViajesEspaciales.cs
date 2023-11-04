@@ -8,16 +8,16 @@ namespace Planetario.Frontend
         public void MostrarMenuViajesEspaciales()
         {
             Console.Clear();
-            Console.WriteLine("Menu Viajes Espaciales");
-            Console.WriteLine("Seleccione una opcion: ");
 
             while (_opcionUsuario != 0)
             {
+                Console.WriteLine("Menu Viajes Espaciales");
                 Console.WriteLine("1. ");
                 Console.WriteLine("2. ");
                 Console.WriteLine("3. ");
                 Console.WriteLine("4. ");
                 Console.WriteLine("0. Regresar");
+                Console.WriteLine("Seleccione una opcion: ");
 
                 _opcionUsuario = Convert.ToInt32(Console.ReadLine());
 
