@@ -9,6 +9,7 @@ public class MenuPlanetario
     public void MostrarMenuPlanetario()
     {
         Console.Clear();
+        Console.WriteLine("Menu Planetario");
         Console.WriteLine("Seleccione una opcion: ");
 
         while (_opcionUsuario != 0)

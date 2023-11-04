@@ -3,6 +3,7 @@ namespace Planetario.Frontend;
 public class MenuPrincipal
 {
     MenuPlanetario menu1 = new MenuPlanetario();
+    MenuViajesEspaciales menu2 = new MenuViajesEspaciales();
 
     private int _opcionUsuario = 9;
 
@@ -10,6 +11,7 @@ public class MenuPrincipal
     {
         Console.Clear();
 
+        Console.WriteLine("Menu Principal");
         Console.WriteLine("Seleccione una opcion: ");
 
         while (_opcionUsuario != 0)
@@ -28,7 +30,7 @@ public class MenuPrincipal
                     break;
 
                 case 2:
-                    Console.WriteLine("Menu Viajes Espaciales");
+                    menu2.MostrarMenuViajesEspaciales();
                     break;
 
                 case 0:
