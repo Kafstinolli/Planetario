@@ -470,19 +470,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\equipo\\.nuget\\packages\\": {}
+    "C:\\Users\\Souler\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\equipo\\OneDrive\\Documentos\\Poo\\Proyecto\\Planetario\\Planetario.csproj",
+      "projectUniqueName": "C:\\Users\\Souler\\Downloads\\Universidad\\Semestre 3\\Programación Orientada a Objetos (POO)\\Proyecto Planetario\\Proyecto\\Planetario\\Planetario.csproj",
       "projectName": "Planetario",
-      "projectPath": "C:\\Users\\equipo\\OneDrive\\Documentos\\Poo\\Proyecto\\Planetario\\Planetario.csproj",
-      "packagesPath": "C:\\Users\\equipo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\equipo\\OneDrive\\Documentos\\Poo\\Proyecto\\Planetario\\obj\\",
+      "projectPath": "C:\\Users\\Souler\\Downloads\\Universidad\\Semestre 3\\Programación Orientada a Objetos (POO)\\Proyecto Planetario\\Proyecto\\Planetario\\Planetario.csproj",
+      "packagesPath": "C:\\Users\\Souler\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Souler\\Downloads\\Universidad\\Semestre 3\\Programación Orientada a Objetos (POO)\\Proyecto Planetario\\Proyecto\\Planetario\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\equipo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Souler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -490,6 +495,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -524,24 +530,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.24, 6.0.24]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.24, 6.0.24]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.24, 6.0.24]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.24, 6.0.24]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
