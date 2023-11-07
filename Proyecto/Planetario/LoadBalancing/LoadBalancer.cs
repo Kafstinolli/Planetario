@@ -1,5 +1,6 @@
 using System.Data.Common;
 using Planetario.Backend.Planetario;
+using Planetario.Backend.ViajesEspaciales;
 using Planetario.Data;
 using Planetario.Data.Planetario;
 using Planetario.Data.ViajesEspaciales;
@@ -9,6 +10,7 @@ namespace Planetario.LoadBalancing;
 public class LoadBalancer
 {
     private PlanetarioController _planetarioController = new PlanetarioController();
+    private ViajesEspacialesController _viajesEspacialesController = new ViajesEspacialesController();
     
     public void prueba(Request request)
     {
@@ -49,6 +51,8 @@ public class LoadBalancer
 
             //  Conexi�n Andr�s:
             ViajesEspacialesServer viajesEspacialesServer = new ViajesEspacialesServer("ANDRES\\SQLEXPRESS", "sa", "Kilian16");
+
+            _viajesEspacialesController.Show(viajesEspacialesServer, request.Query);
         }
     }
 }
