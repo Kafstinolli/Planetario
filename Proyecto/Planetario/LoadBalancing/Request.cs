@@ -2,14 +2,14 @@ namespace Planetario.LoadBalancing;
 
 public class Request
 {
-    public string Nombre { get; }
+    public string Query { get; }
     public string Tipo { get; }
 
     public string Id { get; }
 
-    public Request(string nombre, string tipo, string id)
+    public Request(string query, string tipo, string id)
     {
-        Nombre = nombre;
+        Query = query;
         Tipo = tipo;
         Id = id;
     }

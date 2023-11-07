@@ -1,4 +1,4 @@
-namespace Planetario.Models;
+namespace Planetario.Models.Planetario;
 
 public class Planeta
 {

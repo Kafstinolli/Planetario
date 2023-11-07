@@ -1,7 +1,7 @@
-using Planetario.Data;
-using Planetario.Models;
+using Planetario.Data.Planetario;
+using Planetario.Models.Planetario;
 
-namespace Planetario.Backend;
+namespace Planetario.Backend.Planetario;
 
 public class PlanetarioController
 {
