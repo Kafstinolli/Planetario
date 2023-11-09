@@ -7,7 +7,7 @@ namespace Planetario.Data.ViajesEspaciales
     {
         public ViajesEspacialesServer(string server, string user, string password) : base(server, user, password){ }
 
-        public void createViajesEspaciales(string query)
+        public void CreateMision(string query)
         {
             Connect();
 

@@ -5,6 +5,14 @@ namespace Planetario.Backend.ViajesEspaciales
 {
     public class ViajesEspacialesController
     {
+        public void Add(ViajesEspacialesServer viajesEspacialesServer, string query)
+        {
+            Console.Clear();
+
+            viajesEspacialesServer.CreateMision(query);
+
+            Console.WriteLine("Se creó la misión correctamente");
+        }
         public void Show(ViajesEspacialesServer viajesEspacialesServer, string query)
         {
             Console.Clear();
