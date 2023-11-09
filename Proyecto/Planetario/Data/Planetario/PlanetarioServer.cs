@@ -42,4 +42,14 @@ public class PlanetarioServer : PlanetarioConnection
 
         return planetas;
     }
+
+    public void UpdatePlaneta(string query)
+    {
+        Connect();
+
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
 }
