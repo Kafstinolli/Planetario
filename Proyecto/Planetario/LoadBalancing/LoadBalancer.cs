@@ -56,7 +56,7 @@ public class LoadBalancer
 
         //  Conexi�n Mateo:
         //   _planetarioServer = new PlanetarioServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
-        //   _viajesEspacialesServer = new ViajesEspacialesServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
+        //  _viajesEspacialesServer = new ViajesEspacialesServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
 
         //  Conexi�n Juanes:
         //   _planetarioServer = new PlanetarioServer("JUANES", "sa", "juanes211520");
