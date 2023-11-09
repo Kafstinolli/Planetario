@@ -7,6 +7,16 @@ namespace Planetario.Data.ViajesEspaciales
     {
         public ViajesEspacialesServer(string server, string user, string password) : base(server, user, password){ }
 
+        public void createViajesEspaciales(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
+
         public List<Mision> GetAllMisiones(string query)
         {
             Connect();
