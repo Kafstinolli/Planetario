@@ -77,6 +77,7 @@ public class LoadBalancer
         }
         else if (request.Id == "viajesEspaciales")
         {
+            _viajesEspacialesController.Add(_viajesEspacialesServer, request.Query);
         }
     }
 }
