@@ -5,6 +5,15 @@ namespace Planetario.Backend.Planetario;
 
 public class PlanetarioController
 {
+    public void Add(PlanetarioServer planetarioServer, string query)
+    {
+        Console.Clear();
+
+        planetarioServer.CreatePlaneta(query);
+
+        Console.WriteLine("Se creó el planeta correctamente");
+    }
+    
     public void Show(PlanetarioServer planetarioServer, string query)
     {
         Console.Clear();
@@ -15,14 +24,5 @@ public class PlanetarioController
         {
             Console.WriteLine($"| {planeta.Nombre} | {planeta.DistanciaSol} | {planeta.PeriodoOrbital} | {planeta.VelocidadOrbital} | {planeta.InclinacionOrbital} |");
         }
-    }
-
-    public void Add(PlanetarioServer planetarioServer, string query)
-    {
-        Console.Clear();
-
-        planetarioServer.CreatePlaneta(query);
-
-        Console.WriteLine("Se creó el planeta correctamente");
     }
 }
