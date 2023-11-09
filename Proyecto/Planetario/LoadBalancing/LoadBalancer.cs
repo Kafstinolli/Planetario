@@ -45,4 +45,15 @@ public class LoadBalancer
             //  _viajesEspacialesController.Show(viajesEspacialesServer, request.Query);
         }
     }
+
+    public void INSERT(Request request)
+    {
+        if (request.Id == "planetario")
+        {
+            //  _planetarioController.Add(planetarioServer, request.Query)
+        }
+        else if (request.Id == "viajesEspaciales")
+        {
+        }
+    }
 }
