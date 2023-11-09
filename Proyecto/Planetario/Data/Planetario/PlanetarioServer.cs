@@ -7,6 +7,16 @@ public class PlanetarioServer : PlanetarioConnection
 {
     public PlanetarioServer(string server, string user, string password) : base(server, user, password) { }
 
+    public void CreatePlaneta(string query)
+    {
+        Connect();
+
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
+
     public List<Planeta> GetAllPlanetas(string query)
     {
         Connect();

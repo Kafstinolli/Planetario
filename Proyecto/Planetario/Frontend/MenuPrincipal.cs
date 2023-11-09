@@ -18,7 +18,7 @@ public class MenuPrincipal
         Console.WriteLine("           ****   BIENVENIDO AL SISTEMA C.A.S.M.E   **** ");
        
         Console.WriteLine("           ********************************************* ");
-        Console.WriteLine("        Seleccione una opcion:                ");
+        Console.WriteLine("           Seleccione una opcion:                ");
        
 
             while (_opcionUsuario != 0)
@@ -28,8 +28,6 @@ public class MenuPrincipal
                 Console.WriteLine("2. Viajes espaciales");
                 Console.WriteLine("0. Salir");
                 Console.WriteLine("Seleccione una opcion: ");
-
-
 
                 _opcionUsuario = Convert.ToInt32(Console.ReadLine());
 
