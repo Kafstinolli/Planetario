@@ -39,6 +39,16 @@ namespace Planetario.Data.ViajesEspaciales
             CloseConnection();
 
             return misiones;
-        } 
+        }
+
+        public void UpdateMision(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
     }
 }
