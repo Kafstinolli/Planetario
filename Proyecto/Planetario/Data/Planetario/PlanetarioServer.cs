@@ -53,5 +53,13 @@ public class PlanetarioServer : PlanetarioConnection
         CloseConnection();
     }
 
+    public void DeletePlaneta(string query)
+    {
+        Connect();
 
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
 }
