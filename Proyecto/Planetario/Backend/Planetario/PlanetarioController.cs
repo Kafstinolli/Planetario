@@ -30,10 +30,10 @@ public class PlanetarioController
     {
         Console.Clear();
 
-        query += $" WHERE Planeta_Id {id}";
+        query += $" WHERE Planeta_Id = {id}";
 
         planetarioServer.UpdatePlaneta(query);
 
-        Console.Writeline("Se editó el planeta correctamente");
+        Console.WriteLine("Se editó el planeta correctamente");
     }
 }
