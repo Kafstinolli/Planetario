@@ -18,7 +18,7 @@ public class PlanetarioController
     {
         Console.Clear();
 
-        List<Planeta> planetas = planetarioServer.GetAllPlanetas(query);
+        List<Planeta> planetas = planetarioServer.ReadPlanetas(query);
 
         foreach (Planeta planeta in planetas)
         {
