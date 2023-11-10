@@ -117,12 +117,12 @@ public class LoadBalancer
     public void DELETE(Request request, int id)
     {
         //  Conexi�n Santiago:
-        //  _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
-        //  _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
+        //   _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
+        //   _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
 
         //  Conexi�n Mateo:
         //   _planetarioServer = new PlanetarioServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
-        //  _viajesEspacialesServer = new ViajesEspacialesServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
+        //   _viajesEspacialesServer = new ViajesEspacialesServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
 
         //  Conexi�n Juanes:
         //   _planetarioServer = new PlanetarioServer("JUANES", "sa", "juanes211520");
@@ -131,7 +131,7 @@ public class LoadBalancer
         //  Conexi�n Ximena:
         //   _planetarioServer = new PlanetarioServer("LAPTOP-0G61ILIU\\SQLEXPRESS", "sa", "sql123");
         //   _viajesEspacialesServer = new ViajesEspacialesServer("LAPTOP-0G61ILIU\\SQLEXPRESS", "sa", "sql123");
-        // :( 
+        //   :( 
 
         //  Conexi�n Andr�s:
         //   _planetarioServer = new PlanetarioServer("ANDRES\\SQLEXPRESS", "sa", "Kilian16");

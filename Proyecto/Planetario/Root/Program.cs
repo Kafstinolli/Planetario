@@ -14,11 +14,12 @@ internal class Program
         //  Request request = new Request("UPDATE Planeta SET Planeta_Nombre = 'KAKAPO'", "planetario");
         //  Request request = new Request("UPDATE Mision SET Mision_Nombre = 'Apolo 16'", "viajesEspaciales");
         //  Request request = new Request("DELETE FROM Planeta", "planetario");
+        //  Request request = new Request("DELETE FROM Mision", "viajesEspaciales");
 
         //  loadBalancer.SELECT(request);
         //  loadBalancer.INSERT(request);
         //  loadBalancer.UPDATE(request, 20);
-        //  loadBalancer.DELETE(request, 6);
+        //  loadBalancer.DELETE(request, 21);
 
         MenuPrincipal menu = new MenuPrincipal();
 
