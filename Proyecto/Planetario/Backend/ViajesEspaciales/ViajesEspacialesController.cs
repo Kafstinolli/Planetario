@@ -29,12 +29,22 @@ namespace Planetario.Backend.ViajesEspaciales
         {
             Console.Clear();
 
-            query += $" WHERE Mision_id = {id}";
+            query += $" WHERE Mision_Id = {id}";
 
             viajesEspacialesServer.UpdateMision(query);
 
-            Console.WriteLine("Se edito la mision correctamente");
+            Console.WriteLine("Se editó la misión correctamente");
+        }
 
+        public void Remove(ViajesEspacialesServer viajesEspacialesServer, string query, int id)
+        {
+            Console.Clear();
+
+            query += $" WHERE Mision_Id = {id}";
+
+            viajesEspacialesServer.DeleteMision(query);
+
+            Console.WriteLine("Se eliminó la misión correctamente");
         }
     }
 }
