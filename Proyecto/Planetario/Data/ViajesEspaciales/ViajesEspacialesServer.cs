@@ -50,5 +50,15 @@ namespace Planetario.Data.ViajesEspaciales
 
             CloseConnection();
         }
+
+        public void DeleteMision(string query) 
+        {  
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
     }
 }
