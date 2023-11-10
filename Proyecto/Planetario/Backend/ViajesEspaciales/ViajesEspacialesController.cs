@@ -24,5 +24,17 @@ namespace Planetario.Backend.ViajesEspaciales
                 Console.WriteLine($"| {mision.IdMision} | {mision.NombreMision} | {mision.FechaMision} | {mision.IdAstronauta} | {mision.IdObjetivo} |");
             }
         }
+
+        public void Edit(ViajesEspacialesServer viajesEspacialesServer, string query, int id)
+        {
+            Console.Clear();
+
+            query += $" WHERE Mision_id = {id}";
+
+            viajesEspacialesServer.UpdateMision(query);
+
+            Console.WriteLine("Se edito la mision correctamente");
+
+        }
     }
 }
