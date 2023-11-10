@@ -17,7 +17,7 @@ public class PlanetarioServer : PlanetarioConnection
         CloseConnection();
     }
 
-    public List<Planeta> GetAllPlanetas(string query)
+    public List<Planeta> ReadPlanetas(string query)
     {
         Connect();
 
@@ -52,4 +52,6 @@ public class PlanetarioServer : PlanetarioConnection
 
         CloseConnection();
     }
+
+
 }
