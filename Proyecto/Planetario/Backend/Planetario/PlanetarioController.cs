@@ -36,4 +36,15 @@ public class PlanetarioController
 
         Console.WriteLine("Se editó el planeta correctamente");
     }
+
+    public void Remove(PlanetarioServer planetarioServer, string query, int id)
+    {
+        Console.Clear();
+
+        query += $" WHERE Planeta_Id = {id}";
+
+        planetarioServer.DeletePlaneta(query);
+
+        Console.WriteLine("Se eliminó el planeta correctamente");
+    }
 }
