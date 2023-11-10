@@ -13,7 +13,7 @@ public class PlanetarioController
 
         Console.WriteLine("Se creó el planeta correctamente");
     }
-    
+
     public void Show(PlanetarioServer planetarioServer, string query)
     {
         Console.Clear();
@@ -24,5 +24,16 @@ public class PlanetarioController
         {
             Console.WriteLine($"| {planeta.Nombre} | {planeta.DistanciaSol} | {planeta.PeriodoOrbital} | {planeta.VelocidadOrbital} | {planeta.InclinacionOrbital} |");
         }
+    }
+
+    public void Edit(PlanetarioServer planetarioServer, string query, int id)
+    {
+        Console.Clear();
+
+        query += $" WHERE Planeta_Id {id}";
+
+        planetarioServer.UpdatePlaneta(query);
+
+        Console.Writeline("Se editó el planeta correctamente");
     }
 }
