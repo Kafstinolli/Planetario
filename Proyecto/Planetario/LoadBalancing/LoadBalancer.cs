@@ -143,6 +143,7 @@ public class LoadBalancer
         }
         else if (request.Id == "viajesEspaciales")
         {
+            _viajesEspacialesController.Remove(_viajesEspacialesServer, request.Query, id);
         }
     }
 }
