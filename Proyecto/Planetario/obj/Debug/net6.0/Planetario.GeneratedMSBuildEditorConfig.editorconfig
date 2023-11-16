@@ -8,6 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Planetario
-build_property.ProjectDir = C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\Souler\Downloads\Universidad\Semestre 3\Programación Orientada a Objetos (POO)\Proyecto Planetario\Proyecto\Planetario\

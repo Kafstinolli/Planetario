@@ -20,7 +20,7 @@ public class LoadBalancer
     public void SELECTPlaneta(Request request)
     {
         //  Conexi�n Santiago:
-        _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
+        //   _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
         //   _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
 
         //  Conexi�n Mateo:
