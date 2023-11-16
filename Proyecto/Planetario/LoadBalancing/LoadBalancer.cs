@@ -10,9 +10,10 @@ namespace Planetario.LoadBalancing;
 public class LoadBalancer
 {
     private PlanetaController _planetarioController = new PlanetaController();
-    private MisionController _viajesEspacialesController = new MisionController();
-
     private SateliteController _sateliteController = new SateliteController();
+
+    private MisionController _viajesEspacialesController = new MisionController();
+    private ObjetivoControler _objetivoController = new ObjetivoControler();
 
     private PlanetarioServer _planetarioServer;
     private ViajesEspacialesServer _viajesEspacialesServer;
@@ -58,6 +59,9 @@ public class LoadBalancer
             {
                 case "mision":
                     _viajesEspacialesController.Show(_viajesEspacialesServer, request.Query);
+                    break;
+                case "objetivo":
+                    _objetivoController.Show(_viajesEspacialesServer, request.Query);
                     break;
             }
         }
@@ -106,6 +110,9 @@ public class LoadBalancer
                 case "misión":
                     _viajesEspacialesController.Add(_viajesEspacialesServer, request.Query);
                     break;
+                case "objetivo":
+                    _objetivoController.Add(_viajesEspacialesServer, request.Query);
+                    break;
             }
         }
     }
@@ -152,6 +159,9 @@ public class LoadBalancer
                 case "mision":
                     _viajesEspacialesController.Edit(_viajesEspacialesServer, request.Query, id);
                     break;
+                case "objetivo":
+                    _objetivoController.Edit(_viajesEspacialesServer, request.Query, id);
+                    break;
             }
         }
     }
@@ -197,6 +207,9 @@ public class LoadBalancer
             {
                 case "mision":
                     _viajesEspacialesController.Remove(_viajesEspacialesServer, request.Query, id);
+                    break;
+                case "objetivo":
+                    _objetivoController.Remove(_viajesEspacialesServer, request.Query, id);
                     break;
             }
         }
