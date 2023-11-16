@@ -17,7 +17,7 @@ public class LoadBalancer
     private PlanetarioServer _planetarioServer;
     private ViajesEspacialesServer _viajesEspacialesServer;
 
-    public void SELECTPlaneta(Request request)
+    public void SELECT(Request request)
     {
         //  Conexi�n Santiago:
         //   _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
@@ -42,15 +42,28 @@ public class LoadBalancer
 
         if (request.Id == "planetario")
         {
-            _planetarioController.Show(_planetarioServer, request.Query);
+            switch (request.Model)
+            {
+                case "planeta":
+                    _planetarioController.Show(_planetarioServer, request.Query);
+                    break;
+                case "satelite":
+                    _sateliteController.Show(_planetarioServer, request.Query);
+                    break;
+            }
         }
         else if (request.Id == "viajesEspaciales")
         {
-            _viajesEspacialesController.Show(_viajesEspacialesServer, request.Query);
+            switch (request.Model)
+            {
+                case "mision":
+                    _viajesEspacialesController.Show(_viajesEspacialesServer, request.Query);
+                    break;
+            }
         }
     }
 
-    public void INSERTPlaneta(Request request)
+    public void INSERT(Request request)
     {
         //  Conexi�n Santiago:
         //   _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
@@ -75,15 +88,29 @@ public class LoadBalancer
 
         if (request.Id == "planetario")
         {
-            _planetarioController.Add(_planetarioServer, request.Query);
+            switch (request.Model)
+            {
+                case "planeta":
+                    _planetarioController.Add(_planetarioServer, request.Query);
+                    break;
+                case "satelite":
+                    _sateliteController.Add(_planetarioServer, request.Query);
+                    break;
+            }
+            
         }
         else if (request.Id == "viajesEspaciales")
         {
-            _viajesEspacialesController.Add(_viajesEspacialesServer, request.Query);
+            switch (request.Model)
+            {
+                case "misión":
+                    _viajesEspacialesController.Add(_viajesEspacialesServer, request.Query);
+                    break;
+            }
         }
     }
 
-    public void UPDATEPlaneta(Request request, int id)
+    public void UPDATE(Request request, int id)
     {
         //  Conexi�n Santiago:
         //  _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
@@ -108,15 +135,28 @@ public class LoadBalancer
 
         if (request.Id == "planetario")
         {
-            _planetarioController.Edit(_planetarioServer, request.Query, id);
+            switch (request.Model)
+            {
+                case "planeta":
+                    _planetarioController.Edit(_planetarioServer, request.Query, id);
+                    break;
+                case "satelite":
+                    _sateliteController.Edit(_planetarioServer, request.Query, id);
+                    break;
+            }
         }
         else if (request.Id == "viajesEspaciales")
         {
-            _viajesEspacialesController.Edit(_viajesEspacialesServer, request.Query, id);
+            switch (request.Model)
+            {
+                case "mision":
+                    _viajesEspacialesController.Edit(_viajesEspacialesServer, request.Query, id);
+                    break;
+            }
         }
     }
 
-    public void DELETEPlaneta(Request request, int id)
+    public void DELETE(Request request, int id)
     {
         //  Conexi�n Santiago:
         //   _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
@@ -141,44 +181,24 @@ public class LoadBalancer
 
         if (request.Id == "planetario")
         {
-            _planetarioController.Remove(_planetarioServer, request.Query, id);
+            switch (request.Model)
+            {
+                case "planeta":
+                    _planetarioController.Remove(_planetarioServer, request.Query, id);
+                    break;
+                case "satelite":
+                    _sateliteController.Remove(_planetarioServer, request.Query, id);
+                    break;
+            }
         }
         else if (request.Id == "viajesEspaciales")
         {
-            _viajesEspacialesController.Remove(_viajesEspacialesServer, request.Query, id);
-        }
-    }
-
-    public void SELECTSatelite(Request request)
-    {
-        //  Conexi�n Santiago:
-        _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
-        //   _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
-
-        //  Conexi�n Mateo:
-        //   _planetarioServer = new PlanetarioServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
-        //   _viajesEspacialesServer = new ViajesEspacialesServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
-
-        //  Conexi�n Juanes:
-        //   _planetarioServer = new PlanetarioServer("JUANES", "sa", "juanes211520");
-        //   _viajesEspacialesServer = new ViajesEspacialesServer("JUANES", "sa", "juanes211520");
-
-        //  Conexi�n Ximena:
-        //   _planetarioServer = new PlanetarioServer("LAPTOP-0G61ILIU\\SQLEXPRESS", "sa", "sql123");
-        //   _viajesEspacialesServer = new ViajesEspacialesServer("LAPTOP-0G61ILIU\\SQLEXPRESS", "sa", "sql123");
-        // :( 
-
-        //  Conexi�n Andr�s:
-        //   _planetarioServer = new PlanetarioServer("ANDRES\\SQLEXPRESS", "sa", "Kilian16");
-        //   _viajesEspacialesServer = new ViajesEspacialesServer("ANDRES\\SQLEXPRESS", "sa", "Kilian16");
-
-        if (request.Id == "planetario")
-        {
-            _sateliteController.Show(_planetarioServer, request.Query);
-        }
-        else if (request.Id == "viajesEspaciales")
-        {
-            _viajesEspacialesController.Show(_viajesEspacialesServer, request.Query);
+            switch (request.Model)
+            {
+                case "mision":
+                    _viajesEspacialesController.Remove(_viajesEspacialesServer, request.Query, id);
+                    break;
+            }
         }
     }
 }
