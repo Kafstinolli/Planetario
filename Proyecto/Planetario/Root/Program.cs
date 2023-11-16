@@ -21,6 +21,20 @@ internal class Program
         //  loadBalancer.UPDATE(request, 20);
         //  loadBalancer.DELETE(request, 21);
 
+        //  Request request = new Request("SELECT Satelite_Id, Satelite_Nombre, Satelite_Excentricidad, Satelite_PeriodoOrbital, Satelite_InclinacionOrbital FROM Satelite", "planetario");
+        //  Request request = new Request("INSERT INTO Planeta (Planeta_Nombre, Planeta_DistanciaSol, Planeta_PeriodoOrbital, Planeta_VelocidadOrbital, Planeta_InclinacionOrbital) VALUES ('PRUEBA', 1.0, 1.0, 1.0, 1.0)", "planetario");
+        //  Request request = new Request("INSERT INTO Mision (Mision_Nombre, Mision_Fecha, Mision_AstronautaId, Mision_ObjetivoId) VALUES ('PRUEBA', '1963-08-22 00:00:00.000', 1, 1)", "viajesEspaciales");
+        //  Request request = new Request("UPDATE Planeta SET Planeta_Nombre = 'KAKAPO'", "planetario");
+        //  Request request = new Request("UPDATE Mision SET Mision_Nombre = 'Apolo 16'", "viajesEspaciales");
+        //  Request request = new Request("DELETE FROM Planeta", "planetario");
+        //  Request request = new Request("DELETE FROM Mision", "viajesEspaciales");
+
+        //  loadBalancer.SELECTPlaneta(request);
+        //  loadBalancer.INSERT(request);
+        //  loadBalancer.UPDATE(request, 20);
+        //  loadBalancer.DELETE(request, 21);
+        //  loadBalancer.SELECTSatelite(request);
+
         MenuPrincipal menu = new MenuPrincipal();
 
         //  menu.MostrarMenuPrincipal();

@@ -108,3 +108,4 @@ C:\Users\usuario\Desktop\POO_2023\Proyecto\Planetario\obj\Debug\net6.0\refint\Pl
 C:\Users\usuario\Desktop\POO_2023\Proyecto\Planetario\obj\Debug\net6.0\Planetario.pdb
 C:\Users\usuario\Desktop\POO_2023\Proyecto\Planetario\obj\Debug\net6.0\Planetario.genruntimeconfig.cache
 C:\Users\usuario\Desktop\POO_2023\Proyecto\Planetario\obj\Debug\net6.0\ref\Planetario.dll
+C:\Users\santi\OneDrive\Documentos\SantiagoRojas\Estudio\Universidad\3er Semestre\POO\Proyectos\Planetario\Proyecto\Planetario\obj\Debug\net6.0\Planetario.sourcelink.json
