@@ -9,12 +9,12 @@ namespace Planetario.Models.ViajesEspaciales
     public class Objetivo
     {
         public int Id { get; set; }
-        public string Name { get;set; }
+        public string Nombre { get;set; }
 
-        public Objetivo(int id, string name)
+        public Objetivo(int id, string nombre)
         {
             Id = id;
-            Name = name;
+            Nombre = nombre;
         }
     }
 }

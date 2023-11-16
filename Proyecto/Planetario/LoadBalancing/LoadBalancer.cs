@@ -10,7 +10,7 @@ namespace Planetario.LoadBalancing;
 public class LoadBalancer
 {
     private PlanetaController _planetarioController = new PlanetaController();
-    private ViajesEspacialesController _viajesEspacialesController = new ViajesEspacialesController();
+    private MisionController _viajesEspacialesController = new MisionController();
 
     private SateliteController _sateliteController = new SateliteController();
 

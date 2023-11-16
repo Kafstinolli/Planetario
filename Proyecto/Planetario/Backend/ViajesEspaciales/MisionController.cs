@@ -3,7 +3,7 @@ using Planetario.Models.ViajesEspaciales;
 
 namespace Planetario.Backend.ViajesEspaciales
 {
-    public class ViajesEspacialesController
+    public class MisionController
     {
         public void Add(ViajesEspacialesServer viajesEspacialesServer, string query)
         {
