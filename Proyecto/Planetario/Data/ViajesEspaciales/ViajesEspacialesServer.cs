@@ -113,5 +113,58 @@ namespace Planetario.Data.ViajesEspaciales
 
             CloseConnection();
         }
+
+        //  Profesion
+        public void CreateProfesion(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
+
+        public List<Profesion> ReadProfesiones(string query)
+        {
+            Connect();
+
+            List<Profesion> profesiones = new List<Profesion>();
+            SqlCommand command = new SqlCommand(query, _connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                int id = reader.GetInt32(0);
+                string nombre = reader.GetString(1);
+
+                profesiones.Add(new Profesion(id, nombre));
+            }
+
+            CloseConnection();
+
+            return profesiones;
+        }
+
+        public void UpdateProfesion(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
+
+        public void DeleteProfesion(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
+
     }
 }
