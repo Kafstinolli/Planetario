@@ -177,11 +177,11 @@ namespace Planetario.Data.ViajesEspaciales
             CloseConnection();
         }
 
-        public List<Astronauta> ReadAstronauta(string query)
+        public List<Astronauta> ReadAstronautas(string query)
         {
             Connect();
 
-            List<Astronauta> astronauta = new List<Astronauta>();
+            List<Astronauta> astronautas = new List<Astronauta>();
             SqlCommand command = new SqlCommand(query, _connection);
             SqlDataReader reader = command.ExecuteReader();
 
@@ -191,12 +191,12 @@ namespace Planetario.Data.ViajesEspaciales
                 string nombre = reader.GetString(1);
                 int idProfesion = reader.GetInt16(2);
 
-                astronauta.Add(new Astronauta(id, nombre, idProfesion));
+                astronautas.Add(new Astronauta(id, nombre, idProfesion));
             }
 
             CloseConnection();
 
-            return astronauta;
+            return astronautas;
         }
 
         public void UpdateAstronauta(string query)
