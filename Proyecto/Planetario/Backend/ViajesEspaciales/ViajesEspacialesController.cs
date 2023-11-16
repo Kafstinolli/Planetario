@@ -17,7 +17,7 @@ namespace Planetario.Backend.ViajesEspaciales
         {
             Console.Clear();
 
-            List<Mision> misiones = viajesEspacialesServer.GetAllMisiones(query);
+            List<Mision> misiones = viajesEspacialesServer.ReadMisiones(query);
            
             foreach(Mision mision in misiones)
             {

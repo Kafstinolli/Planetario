@@ -7,6 +7,7 @@ namespace Planetario.Data.ViajesEspaciales
     {
         public ViajesEspacialesServer(string server, string user, string password) : base(server, user, password){ }
 
+        //  Mision
         public void CreateMision(string query)
         {
             Connect();
@@ -17,7 +18,7 @@ namespace Planetario.Data.ViajesEspaciales
             CloseConnection();
         }
 
-        public List<Mision> GetAllMisiones(string query)
+        public List<Mision> ReadMisiones(string query)
         {
             Connect();
 
@@ -53,6 +54,58 @@ namespace Planetario.Data.ViajesEspaciales
 
         public void DeleteMision(string query) 
         {  
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
+
+        //  Objetivo
+        public void CreateObjetivo(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
+
+        public List<Objetivo> ReadObjetivos(string query)
+        {
+            Connect();
+
+            List<Objetivo> objetivos = new List<Objetivo>();
+            SqlCommand command = new SqlCommand(query, _connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                int id = reader.GetInt32(0);
+                string nombre = reader.GetString(1);
+
+                objetivos.Add(new Objetivo(id, nombre));
+            }
+
+            CloseConnection();
+
+            return objetivos;
+        }
+
+        public void UpdateObjetivo(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
+
+        public void DeleteObjetivo(string query)
+        {
             Connect();
 
             SqlCommand command = new SqlCommand(query, _connection);
