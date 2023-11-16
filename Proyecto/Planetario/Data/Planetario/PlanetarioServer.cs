@@ -90,7 +90,7 @@ public class PlanetarioServer : PlanetarioConnection
             string nombre = reader.GetString(1);
             double excentricidad = reader.GetDouble(2);
             double periodoOrbital = reader.GetDouble(3);
-            double inclinacionOrbital = reader.GetDouble(5);
+            double inclinacionOrbital = reader.GetDouble(4);
 
             satelites.Add(new Satelite(id, nombre, excentricidad, periodoOrbital, inclinacionOrbital));
         }
