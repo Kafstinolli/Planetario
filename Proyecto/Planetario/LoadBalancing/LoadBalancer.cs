@@ -14,6 +14,7 @@ public class LoadBalancer
 
     private MisionController _viajesEspacialesController = new MisionController();
     private ObjetivoControler _objetivoController = new ObjetivoControler();
+    private ProfesionController _profesionController = new ProfesionController();
 
     private PlanetarioServer _planetarioServer;
     private ViajesEspacialesServer _viajesEspacialesServer;
@@ -62,6 +63,9 @@ public class LoadBalancer
                     break;
                 case "objetivo":
                     _objetivoController.Show(_viajesEspacialesServer, request.Query);
+                    break;
+                case "profesion":
+                    _profesionController.Show(_viajesEspacialesServer, request.Query);
                     break;
             }
         }
@@ -113,6 +117,9 @@ public class LoadBalancer
                 case "objetivo":
                     _objetivoController.Add(_viajesEspacialesServer, request.Query);
                     break;
+                case "profesion":
+                    _profesionController.Add(_viajesEspacialesServer, request.Query);
+                    break;
             }
         }
     }
@@ -162,6 +169,9 @@ public class LoadBalancer
                 case "objetivo":
                     _objetivoController.Edit(_viajesEspacialesServer, request.Query, id);
                     break;
+                case "profesion":
+                    _profesionController.Edit(_viajesEspacialesServer, request.Query, id);
+                    break;
             }
         }
     }
@@ -210,6 +220,9 @@ public class LoadBalancer
                     break;
                 case "objetivo":
                     _objetivoController.Remove(_viajesEspacialesServer, request.Query, id);
+                    break;
+                case "profesion":
+                    _profesionController.Remove(_viajesEspacialesServer, request.Query, id);
                     break;
             }
         }
