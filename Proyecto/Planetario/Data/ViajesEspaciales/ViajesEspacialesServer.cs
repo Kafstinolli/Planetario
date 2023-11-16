@@ -189,7 +189,7 @@ namespace Planetario.Data.ViajesEspaciales
             {
                 int id = reader.GetInt32(0);
                 string nombre = reader.GetString(1);
-                int idProfesion = reader.GetInt16(2);
+                int idProfesion = reader.GetInt32(2);
 
                 astronautas.Add(new Astronauta(id, nombre, idProfesion));
             }
