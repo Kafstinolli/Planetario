@@ -15,6 +15,7 @@ public class LoadBalancer
     private MisionController _viajesEspacialesController = new MisionController();
     private ObjetivoControler _objetivoController = new ObjetivoControler();
     private ProfesionController _profesionController = new ProfesionController();
+    private AstronataController _astronataController = new AstronataController();
 
     private PlanetarioServer _planetarioServer;
     private ViajesEspacialesServer _viajesEspacialesServer;
@@ -66,6 +67,9 @@ public class LoadBalancer
                     break;
                 case "profesion":
                     _profesionController.Show(_viajesEspacialesServer, request.Query);
+                    break;
+                case "astronauta":
+                    _astronataController.Show(_viajesEspacialesServer, request.Query);
                     break;
             }
         }
@@ -120,6 +124,9 @@ public class LoadBalancer
                 case "profesion":
                     _profesionController.Add(_viajesEspacialesServer, request.Query);
                     break;
+                case "astronauta":
+                    _astronataController.Add(_viajesEspacialesServer, request.Query);
+                    break;
             }
         }
     }
@@ -172,6 +179,9 @@ public class LoadBalancer
                 case "profesion":
                     _profesionController.Edit(_viajesEspacialesServer, request.Query, id);
                     break;
+                case "astronauta":
+                    _astronataController.Edit(_viajesEspacialesServer, request.Query, id);
+                    break;
             }
         }
     }
@@ -223,6 +233,9 @@ public class LoadBalancer
                     break;
                 case "profesion":
                     _profesionController.Remove(_viajesEspacialesServer, request.Query, id);
+                    break;
+                case "astronauta":
+                    _astronataController.Remove(_viajesEspacialesServer, request.Query, id);
                     break;
             }
         }
