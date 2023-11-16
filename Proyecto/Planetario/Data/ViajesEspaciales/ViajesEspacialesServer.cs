@@ -166,5 +166,57 @@ namespace Planetario.Data.ViajesEspaciales
             CloseConnection();
         }
 
+        //  Astronauta
+        public void CreateAstronauta(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
+
+        public List<Astronauta> ReadAstronauta(string query)
+        {
+            Connect();
+
+            List<Astronauta> astronauta = new List<Astronauta>();
+            SqlCommand command = new SqlCommand(query, _connection);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                int id = reader.GetInt32(0);
+                string nombre = reader.GetString(1);
+                int idProfesion = reader.GetInt16(2);
+
+                astronauta.Add(new Astronauta(id, nombre, idProfesion));
+            }
+
+            CloseConnection();
+
+            return astronauta;
+        }
+
+        public void UpdateAstronauta(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
+
+        public void DeleteAstronauta(string query)
+        {
+            Connect();
+
+            SqlCommand command = new SqlCommand(query, _connection);
+            command.ExecuteNonQuery();
+
+            CloseConnection();
+        }
     }
 }
