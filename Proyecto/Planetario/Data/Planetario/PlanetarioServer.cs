@@ -135,7 +135,7 @@ public class PlanetarioServer : PlanetarioConnection
     {
         Connect();
 
-        List<Planetario> planetarios = new List<Planetario>();
+        List<NPlanetario> planetarios = new List<NPlanetario>();
         SqlCommand command = new SqlCommand(query, _connection);
 
         SqlDataReader reader = command.ExecuteReader();

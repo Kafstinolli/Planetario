@@ -1,5 +1,5 @@
 using System.Data.Common;
-using NPlanetario.Backend.Planetario;
+using NPlanetario.Backend.BPlanetario;
 using NPlanetario.Backend.ViajesEspaciales;
 using NPlanetario.Data;
 using NPlanetario.Data.DPlanetario;
