@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Planetario.Models.ViajesEspaciales
+namespace NPlanetario.Models.ViajesEspaciales
 {
     public class Profesion
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Planetario.Frontend;
+namespace NPlanetario.Frontend;
 
 public class MenuPrincipal
 {

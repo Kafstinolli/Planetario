@@ -1,12 +1,12 @@
-﻿using Planetario.Data.Planetario;
-using Planetario.Models.Planetario;
+﻿using NPlanetario.Data.DPlanetario;
+using NPlanetario.Models.MPlanetario;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Planetario.Backend.Planetario
+namespace NPlanetario.Backend.Planetario
 {
     public class SateliteController
     {

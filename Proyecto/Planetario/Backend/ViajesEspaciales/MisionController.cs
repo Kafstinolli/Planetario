@@ -1,7 +1,7 @@
-﻿using Planetario.Data.ViajesEspaciales;
-using Planetario.Models.ViajesEspaciales;
+﻿using NPlanetario.Data.ViajesEspaciales;
+using NPlanetario.Models.ViajesEspaciales;
 
-namespace Planetario.Backend.ViajesEspaciales
+namespace NPlanetario.Backend.ViajesEspaciales
 {
     public class MisionController
     {

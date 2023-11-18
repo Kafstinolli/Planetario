@@ -1,13 +1,13 @@
 using System.Data.SqlClient;
-using Planetario.Models.Planetario;
+using NPlanetario.Models.MPlanetario;
 
-namespace Planetario.Data.Planetario;
+namespace NPlanetario.Data.DPlanetario;
 
 public class PlanetarioServer : PlanetarioConnection
 {
     public PlanetarioServer(string server, string user, string password) : base(server, user, password) { }
 
-    //  Operaciones Planeta
+    //  Planeta
     public void CreatePlaneta(string query)
     {
         Connect();
@@ -64,7 +64,7 @@ public class PlanetarioServer : PlanetarioConnection
         CloseConnection();
     }
 
-    //  Operaciones Satelite
+    //  Satelite
     public void CreateSatelite(string query)
     {
         Connect();
@@ -111,6 +111,59 @@ public class PlanetarioServer : PlanetarioConnection
     }
 
     public void DeleteSatelite(string query)
+    {
+        Connect();
+
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
+
+    //  Planetario
+    public void CreatePlanetario(string query)
+    {
+        Connect();
+
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
+
+    public List<Planetario> ReadPlanetarios(string query)
+    {
+        Connect();
+
+        List<Planetario> planetarios = new List<Planetario>();
+        SqlCommand command = new SqlCommand(query, _connection);
+
+        SqlDataReader reader = command.ExecuteReader();
+
+        while (reader.Read())
+        {
+            int id = reader.GetInt32(0);
+            string nombre = reader.GetString(1);
+            
+            planetarios.Add(new Planetario(id, nombre));
+        }
+
+        CloseConnection();
+
+        return planetarios;
+    }
+
+    public void UpdatePlanetario(string query)
+    {
+        Connect();
+
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
+
+    public void DeletePlanetario(string query)
     {
         Connect();
 

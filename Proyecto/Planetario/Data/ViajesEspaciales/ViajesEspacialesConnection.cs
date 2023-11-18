@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace Planetario.Data.ViajesEspaciales
+namespace NPlanetario.Data.ViajesEspaciales
 {
     public class ViajesEspacialesConnection
     {

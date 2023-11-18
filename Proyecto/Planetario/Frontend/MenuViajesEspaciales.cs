@@ -1,6 +1,6 @@
 ﻿
 
-namespace Planetario.Frontend
+namespace NPlanetario.Frontend
 {
     public class MenuViajesEspaciales
     {

@@ -1,7 +1,7 @@
-﻿using Planetario.Models.ViajesEspaciales;
+﻿using NPlanetario.Models.ViajesEspaciales;
 using System.Data.SqlClient;
 
-namespace Planetario.Data.ViajesEspaciales
+namespace NPlanetario.Data.ViajesEspaciales
 {
     public class ViajesEspacialesServer : ViajesEspacialesConnection
     {

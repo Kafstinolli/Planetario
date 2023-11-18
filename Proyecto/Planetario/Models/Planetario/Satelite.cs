@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Planetario.Models.Planetario
+namespace NPlanetario.Models.MPlanetario
 {
     public class Satelite
     {

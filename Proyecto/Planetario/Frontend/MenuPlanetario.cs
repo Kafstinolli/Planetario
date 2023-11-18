@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Diagnostics;
 
-namespace Planetario.Frontend;
+namespace NPlanetario.Frontend;
 
 public class MenuPlanetario
 {

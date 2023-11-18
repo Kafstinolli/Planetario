@@ -1,12 +1,12 @@
-﻿using Planetario.Data.ViajesEspaciales;
-using Planetario.Models.ViajesEspaciales;
+﻿using NPlanetario.Data.ViajesEspaciales;
+using NPlanetario.Models.ViajesEspaciales;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Planetario.Backend.ViajesEspaciales
+namespace NPlanetario.Backend.ViajesEspaciales
 {
     public class AstronataController
     {

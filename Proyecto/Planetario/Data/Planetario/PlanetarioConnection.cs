@@ -1,6 +1,6 @@
 using System.Data.SqlClient;
 
-namespace Planetario.Data.Planetario;
+namespace NPlanetario.Data.DPlanetario;
 
 public abstract class PlanetarioConnection
 {

@@ -1,4 +1,4 @@
-namespace Planetario.LoadBalancing;
+namespace NPlanetario.LoadBalancing;
 
 public class Request
 {

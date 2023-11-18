@@ -1,11 +1,11 @@
 using System.Data.Common;
-using Planetario.Backend.Planetario;
-using Planetario.Backend.ViajesEspaciales;
-using Planetario.Data;
-using Planetario.Data.Planetario;
-using Planetario.Data.ViajesEspaciales;
+using NPlanetario.Backend.Planetario;
+using NPlanetario.Backend.ViajesEspaciales;
+using NPlanetario.Data;
+using NPlanetario.Data.DPlanetario;
+using NPlanetario.Data.ViajesEspaciales;
 
-namespace Planetario.LoadBalancing;
+namespace NPlanetario.LoadBalancing;
 
 public class LoadBalancer
 {

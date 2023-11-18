@@ -1,4 +1,4 @@
-﻿namespace Planetario.Models.ViajesEspaciales
+﻿namespace NPlanetario.Models.ViajesEspaciales
 {
     public class Mision
     {
