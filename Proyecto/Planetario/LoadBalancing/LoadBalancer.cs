@@ -9,8 +9,9 @@ namespace NPlanetario.LoadBalancing;
 
 public class LoadBalancer
 {
-    private PlanetaController _planetarioController = new PlanetaController();
+    private PlanetaController _planetaController = new PlanetaController();
     private SateliteController _sateliteController = new SateliteController();
+    private PlanetarioController _planetarioController = new PlanetarioController();
 
     private MisionController _viajesEspacialesController = new MisionController();
     private ObjetivoControler _objetivoController = new ObjetivoControler();
@@ -52,6 +53,9 @@ public class LoadBalancer
                     break;
                 case "satelite":
                     _sateliteController.Show(_planetarioServer, request.Query);
+                    break;
+                case "planetario":
+                    _planetarioController.Show(_planetarioServer, request.Query);
                     break;
             }
         }
@@ -107,6 +111,9 @@ public class LoadBalancer
                     break;
                 case "satelite":
                     _sateliteController.Add(_planetarioServer, request.Query);
+                    break;
+                case "planetario":
+                    _planetarioController.Add(_planetarioServer, request.Query);
                     break;
             }
             
@@ -164,6 +171,9 @@ public class LoadBalancer
                 case "satelite":
                     _sateliteController.Edit(_planetarioServer, request.Query, id);
                     break;
+                case "planetario":
+                    _planetarioController.Edit(_planetarioServer, request.Query, id);
+                    break;
             }
         }
         else if (request.Id == "viajesEspaciales")
@@ -218,6 +228,9 @@ public class LoadBalancer
                     break;
                 case "satelite":
                     _sateliteController.Remove(_planetarioServer, request.Query, id);
+                    break;
+                case "planetario":
+                    _planetarioController.Remove(_planetarioServer, request.Query, id);
                     break;
             }
         }
