@@ -23,9 +23,9 @@ namespace NPlanetario.Backend.BPlanetario
         {
             Console.Clear();
 
-            List<Planetario> planetarios = planetarioServer.ReadPlanetarios(query);
+            List<PlanetarioC> planetarios = planetarioServer.ReadPlanetarios(query);
 
-            foreach (Planetario planetario in planetarios)
+            foreach (PlanetarioC planetario in planetarios)
             {
                 Console.WriteLine($"| {planetario.Id} | {planetario.Nombre} |");
             }
