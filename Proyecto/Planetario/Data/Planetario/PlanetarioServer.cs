@@ -1,5 +1,6 @@
 using System.Data.SqlClient;
 using NPlanetario.Models.MPlanetario;
+using Planetario.Models.Planetario;
 
 namespace NPlanetario.Data.DPlanetario;
 
@@ -164,6 +165,50 @@ public class PlanetarioServer : PlanetarioConnection
     }
 
     public void DeletePlanetario(string query)
+    {
+        Connect();
+
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
+
+    //  Planetario Planetas
+    public void CreatePlanetarioPlanetas(string query)
+    {
+        Connect();
+
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
+
+    public List<PlanetarioPlanetas> ReadPlanetarioPlanetas(string query)
+    {
+        Connect();
+
+        List<PlanetarioPlanetas> planetarios = new List<PlanetarioPlanetas>();
+        SqlCommand command = new SqlCommand(query, _connection);
+
+        SqlDataReader reader = command.ExecuteReader();
+
+        while (reader.Read())
+        {
+            int id = reader.GetInt32(0);
+            int planetarioId = reader.GetInt32(1);
+            int planetaId = reader.GetInt32(2);
+
+            planetarios.Add(new PlanetarioPlanetas(id, planetarioId, planetaId));
+        }
+
+        CloseConnection();
+
+        return planetarios;
+    }
+
+    public void DeletePlanetarioPlanetas(string query)
     {
         Connect();
 
