@@ -30,6 +30,12 @@ public class MenuPlanetario
             switch (_opcionUsuario)
             {
                 case 1:
+                    string nombrePlanetario;
+
+                    Console.WriteLine("Introduzca el nombre del planetario");
+                    nombrePlanetario = Console.ReadLine();
+
+                    CrearPlanetario.Crear(nombrePlanetario);
                     break;
 
                 case 2:

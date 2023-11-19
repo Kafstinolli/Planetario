@@ -7,7 +7,6 @@ internal class Program
     private static void Main(string[] args)
     {
         LoadBalancer loadBalancer = new LoadBalancer();
-        //  Request request = new Request("SELECT  Planetario_Id, Planetario_Nombre FROM Planetario", "planetario", "planetario");
 
         //  Request request = new Request("SELECT Astronauta_Id, Astronauta_Nombre, Astronauta_ProfesionId FROM Astronauta", "viajesEspaciales", "astronauta");
 

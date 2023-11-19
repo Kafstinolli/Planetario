@@ -13,8 +13,8 @@ namespace Planetario.Frontend
         {
             LoadBalancer _loadBalancer = new LoadBalancer();
             
-            Request _requestSelect = new Request("SELECT  Planetario_Id, Planetario_Nombre FROM Planetario", "planetario", "planetario");
-            _loadBalancer.SELECT(_requestSelect);
+            Request request = new Request("SELECT  Planetario_Id, Planetario_Nombre FROM Planetario", "planetario", "planetario");
+            _loadBalancer.SELECT(request);
         }
     }
 }
