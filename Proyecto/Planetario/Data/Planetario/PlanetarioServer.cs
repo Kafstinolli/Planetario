@@ -185,29 +185,6 @@ public class PlanetarioServer : PlanetarioConnection
         CloseConnection();
     }
 
-    public List<PlanetarioPlanetas> ReadPlanetarioPlanetas(string query)
-    {
-        Connect();
-
-        List<PlanetarioPlanetas> planetarios = new List<PlanetarioPlanetas>();
-        SqlCommand command = new SqlCommand(query, _connection);
-
-        SqlDataReader reader = command.ExecuteReader();
-
-        while (reader.Read())
-        {
-            int id = reader.GetInt32(0);
-            int planetarioId = reader.GetInt32(1);
-            int planetaId = reader.GetInt32(2);
-
-            planetarios.Add(new PlanetarioPlanetas(id, planetarioId, planetaId));
-        }
-
-        CloseConnection();
-
-        return planetarios;
-    }
-
     public void DeletePlanetarioPlanetas(string query)
     {
         Connect();
