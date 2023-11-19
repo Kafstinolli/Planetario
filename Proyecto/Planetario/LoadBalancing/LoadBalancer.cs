@@ -4,6 +4,7 @@ using NPlanetario.Backend.ViajesEspaciales;
 using NPlanetario.Data;
 using NPlanetario.Data.DPlanetario;
 using NPlanetario.Data.ViajesEspaciales;
+using Planetario.Backend.Planetario;
 
 namespace NPlanetario.LoadBalancing;
 
@@ -12,6 +13,9 @@ public class LoadBalancer
     private PlanetaController _planetaController = new PlanetaController();
     private SateliteController _sateliteController = new SateliteController();
     private PlanetarioController _planetarioController = new PlanetarioController();
+    private PlanetarioPlanetaController _planetarioPlanetaController = new PlanetarioPlanetaController();
+    private PlanetarioSateliteController _planetarioSateliteController = new PlanetarioSateliteController();
+
 
     private MisionController _viajesEspacialesController = new MisionController();
     private ObjetivoControler _objetivoController = new ObjetivoControler();
@@ -114,6 +118,12 @@ public class LoadBalancer
                     break;
                 case "planetario":
                     _planetarioController.Add(_planetarioServer, request.Query);
+                    break;
+                case "planetarioPlanetas":
+                    _planetarioPlanetaController.Add(_planetarioServer, request.Query);
+                    break;
+                case "planetarioSatelite":
+                    _planetarioSateliteController.Add(_planetarioServer, request.Query);
                     break;
             }
             
@@ -231,6 +241,12 @@ public class LoadBalancer
                     break;
                 case "planetario":
                     _planetarioController.Remove(_planetarioServer, request.Query, id);
+                    break;
+                case "planetarioPlanetas":
+                    _planetarioPlanetaController.Remove(_planetarioServer, request.Query, id);
+                    break;
+                case "planetarioSatelite":
+                    _planetarioSateliteController.Remove(_planetarioServer, request.Query, id);
                     break;
             }
         }
