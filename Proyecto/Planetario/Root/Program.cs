@@ -30,6 +30,6 @@ internal class Program
 
         MenuPrincipal menu = new MenuPrincipal();
 
-        //  menu.MostrarMenuPrincipal();
+        menu.MostrarMenu();
     }
 }

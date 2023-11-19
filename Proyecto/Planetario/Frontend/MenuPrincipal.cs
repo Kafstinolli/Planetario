@@ -9,19 +9,11 @@ public class MenuPrincipal
 
     private int _opcionUsuario = 9;
 
-    public void MostrarMenuPrincipal()
+    public void MostrarMenu()
     {
         Console.Clear();
 
-
-        Console.WriteLine("           ********************************************* ");
-        Console.WriteLine("           ****   BIENVENIDO AL SISTEMA C.A.S.M.E   **** ");
-       
-        Console.WriteLine("           ********************************************* ");
-        Console.WriteLine("           Seleccione una opcion:                ");
-       
-
-            while (_opcionUsuario != 0)
+        while (_opcionUsuario != 0)
             {
                 Console.WriteLine("Menu Principal");
                 Console.WriteLine("1. Planetario");
@@ -46,9 +38,7 @@ public class MenuPrincipal
                         break;
 
                     default:
-                        MostrarMenuPrincipal();
-                        Console.Clear();
-                        Console.WriteLine("Seleccione una opción valida");
+                        MostrarMenu();
                         break;
                 }
             }

@@ -28,7 +28,7 @@ public class LoadBalancer
     public void SELECT(Request request)
     {
         //  Conexi�n Santiago:
-        //   _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
+        _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
         //   _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
 
         //  Conexi�n Mateo:
@@ -86,7 +86,7 @@ public class LoadBalancer
     public void INSERT(Request request)
     {
         //  Conexi�n Santiago:
-        //   _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
+        _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
         //   _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
 
         //  Conexi�n Mateo:
@@ -151,7 +151,7 @@ public class LoadBalancer
     public void UPDATE(Request request, int id)
     {
         //  Conexi�n Santiago:
-        //  _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
+        _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
         //  _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
 
         //  Conexi�n Mateo:
@@ -209,7 +209,7 @@ public class LoadBalancer
     public void DELETE(Request request, int id)
     {
         //  Conexi�n Santiago:
-        //   _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
+        _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
         //   _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
 
         //  Conexi�n Mateo:
