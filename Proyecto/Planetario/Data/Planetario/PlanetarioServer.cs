@@ -131,11 +131,11 @@ public class PlanetarioServer : PlanetarioConnection
         CloseConnection();
     }
 
-    public List<Planetario> ReadPlanetarios(string query)
+    public List<PlanetarioC> ReadPlanetarios(string query)
     {
         Connect();
 
-        List<Planetario> planetarios = new List<Planetario>();
+        List<PlanetarioC> planetarios = new List<PlanetarioC>();
         SqlCommand command = new SqlCommand(query, _connection);
 
         SqlDataReader reader = command.ExecuteReader();
@@ -145,7 +145,7 @@ public class PlanetarioServer : PlanetarioConnection
             int id = reader.GetInt32(0);
             string nombre = reader.GetString(1);
             
-            planetarios.Add(new Planetario(id, nombre));
+            planetarios.Add(new PlanetarioC(id, nombre));
         }
 
         CloseConnection();
