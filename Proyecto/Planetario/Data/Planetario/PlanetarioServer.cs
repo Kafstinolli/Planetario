@@ -194,4 +194,26 @@ public class PlanetarioServer : PlanetarioConnection
 
         CloseConnection();
     }
+
+    //  Planetario Satelites
+    public void CreatePlanetarioSatelites(string query)
+    {
+        Connect();
+
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
+
+    public void DeletePlanetarioSatelites(string query)
+    {
+        Connect();
+
+        SqlCommand command = new SqlCommand(query, _connection);
+        command.ExecuteNonQuery();
+
+        CloseConnection();
+    }
+
 }
