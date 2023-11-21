@@ -38,6 +38,7 @@ namespace Planetario.Frontend.Principal.Viajes_Espaciales
                         break;
 
                     case 2:
+                        MostrarObjetivos.Mostrar();
                         break;
 
                     case 3:
