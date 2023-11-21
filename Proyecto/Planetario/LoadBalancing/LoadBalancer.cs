@@ -29,7 +29,7 @@ public class LoadBalancer
     {
         //  Conexi�n Santiago:
         _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
-        //   _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
+        _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12");
 
         //  Conexi�n Mateo:
         //   _planetarioServer = new PlanetarioServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
@@ -87,7 +87,7 @@ public class LoadBalancer
     {
         //  Conexi�n Santiago:
         _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
-        //   _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
+        _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12");
 
         //  Conexi�n Mateo:
         //  _planetarioServer = new PlanetarioServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
@@ -152,7 +152,7 @@ public class LoadBalancer
     {
         //  Conexi�n Santiago:
         _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
-        //  _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
+        _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12");
 
         //  Conexi�n Mateo:
         //  _planetarioServer = new PlanetarioServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");
@@ -210,7 +210,7 @@ public class LoadBalancer
     {
         //  Conexi�n Santiago:
         _planetarioServer = new PlanetarioServer("softiRedsLaptop", "sa", "isabella12");
-        //   _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12"); 
+        _viajesEspacialesServer = new ViajesEspacialesServer("softiRedsLaptop", "sa", "isabella12");
 
         //  Conexi�n Mateo:
         //   _planetarioServer = new PlanetarioServer("DESKTOP-RGNT8FG\\SQLEXPRESS", "sa", "Project1");

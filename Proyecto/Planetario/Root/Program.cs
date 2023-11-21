@@ -8,8 +8,6 @@ internal class Program
     {
         LoadBalancer loadBalancer = new LoadBalancer();
 
-        //  Request request = new Request("SELECT Astronauta_Id, Astronauta_Nombre, Astronauta_ProfesionId FROM Astronauta", "viajesEspaciales", "astronauta");
-
         //  Request request = new Request("INSERT INTO Planetario (Planetario_Nombre) VALUES ('PRUEBA')", "planetario", "planetario");
 
         //  Request request = new Request("INSERT INTO Astronauta (Astronauta_Nombre, Astronauta_ProfesionId) VALUES ('PRUEBA', 1)", "viajesEspaciales", "astronauta");
