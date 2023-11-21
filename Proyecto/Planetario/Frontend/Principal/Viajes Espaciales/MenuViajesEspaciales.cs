@@ -3,6 +3,7 @@
 using Planetario.Frontend.Crear.Planetario;
 using Planetario.Frontend.Crear.Viajes_Espaciales;
 using Planetario.Frontend.Editrar.Planetario;
+using Planetario.Frontend.Editrar.Viajes_Espaciales;
 using Planetario.Frontend.Eliminar.Planetario;
 using Planetario.Frontend.Mostrar.Planetario;
 using Planetario.Frontend.Mostrar.Viajes_Espaciales;
@@ -41,6 +42,7 @@ namespace NPlanetario.Frontend
                         break;
 
                     case 3:
+                        EditarMision.Editar();
                         break;
 
                     case 4:
