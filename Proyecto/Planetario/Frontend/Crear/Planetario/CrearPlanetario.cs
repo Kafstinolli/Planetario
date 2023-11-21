@@ -9,7 +9,6 @@ namespace Planetario.Frontend.Crear.Planetario
 {
     public class CrearPlanetario
     {
-
         public static void Crear()
         {
             LoadBalancer loadBalancer = new LoadBalancer();

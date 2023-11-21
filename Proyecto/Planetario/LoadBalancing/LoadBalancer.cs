@@ -132,7 +132,7 @@ public class LoadBalancer
         {
             switch (request.Model)
             {
-                case "misión":
+                case "mision":
                     _viajesEspacialesController.Add(_viajesEspacialesServer, request.Query);
                     break;
                 case "objetivo":
