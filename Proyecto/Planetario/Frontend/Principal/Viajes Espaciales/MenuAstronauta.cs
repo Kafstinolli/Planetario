@@ -1,34 +1,33 @@
-﻿
-
-using Planetario.Frontend.Crear.Planetario;
-using Planetario.Frontend.Crear.Viajes_Espaciales;
-using Planetario.Frontend.Editrar.Planetario;
+﻿using Planetario.Frontend.Crear.Viajes_Espaciales;
 using Planetario.Frontend.Editrar.Viajes_Espaciales;
-using Planetario.Frontend.Eliminar.Planetario;
 using Planetario.Frontend.Eliminar.Viajes_Espaciales;
-using Planetario.Frontend.Mostrar.Planetario;
 using Planetario.Frontend.Mostrar.Viajes_Espaciales;
-using Planetario.Frontend.Principal;
-using Planetario.Frontend.Principal.Viajes_Espaciales;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace NPlanetario.Frontend
+namespace Planetario.Frontend.Principal.Viajes_Espaciales
 {
-    public class MenuViajesEspaciales
+    public class MenuAstronauta
     {
         public static void MostrarMenu()
         {
-            int _opcionUsuario = 9;
+            int _opcionUsuario = 3;
 
             Console.Clear();
 
             while (_opcionUsuario != 0)
             {
-                Console.WriteLine("\nMenu Viajes Espaciales");
-                Console.WriteLine("Seleccione un modelo");
-                Console.WriteLine("1. Astronauta");
-                Console.WriteLine("2. Mision");
-                Console.WriteLine("3. Objetivo");
-                Console.WriteLine("4. Profesion");
+                Console.WriteLine("\nMenu Astronauta");
+                Console.WriteLine("Seleccione una opcion: ");
+                Console.WriteLine("1. Crear astronauta");
+                Console.WriteLine("2. Visualizar astronautas");
+                Console.WriteLine("3. Editar astronauta");
+                Console.WriteLine("4. Eliminar astronauta");
+                Console.WriteLine("0. Salir del menu de astronautas");
+                Console.WriteLine("Seleccione una opcion: ");
 
                 _opcionUsuario = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
@@ -36,11 +35,10 @@ namespace NPlanetario.Frontend
                 switch (_opcionUsuario)
                 {
                     case 1:
-                        MenuAstronauta.MostrarMenu();
                         break;
 
                     case 2:
-                        MenuMision.MostrarMenu();
+                        MostrarAstronautas.Mostrar();
                         break;
 
                     case 3:
