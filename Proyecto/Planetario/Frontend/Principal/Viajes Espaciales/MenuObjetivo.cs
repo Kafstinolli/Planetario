@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Planetario.Frontend.Principal.Viajes_Espaciales
 {
-    public class MenuAstronauta
+    public class MenuObjetivo
     {
         public static void MostrarMenu()
         {
@@ -20,13 +20,13 @@ namespace Planetario.Frontend.Principal.Viajes_Espaciales
 
             while (_opcionUsuario != 0)
             {
-                Console.WriteLine("\nMenu Astronauta");
+                Console.WriteLine("\nMenu Objetivo");
                 Console.WriteLine("Seleccione una opcion: ");
-                Console.WriteLine("1. Crear astronauta");
-                Console.WriteLine("2. Visualizar astronautas");
-                Console.WriteLine("3. Editar astronauta");
-                Console.WriteLine("4. Eliminar astronauta");
-                Console.WriteLine("0. Salir del menu de astronautas");
+                Console.WriteLine("1. Crear objetivo");
+                Console.WriteLine("2. Visualizar objetivos");
+                Console.WriteLine("3. Editar objetivo");
+                Console.WriteLine("4. Eliminar objetivo");
+                Console.WriteLine("0. Salir del menu de objetivos");
                 Console.WriteLine("Seleccione una opcion: ");
 
                 _opcionUsuario = Convert.ToInt32(Console.ReadLine());
@@ -35,19 +35,15 @@ namespace Planetario.Frontend.Principal.Viajes_Espaciales
                 switch (_opcionUsuario)
                 {
                     case 1:
-                        CrearAstronauta.Crear();
                         break;
 
                     case 2:
-                        MostrarAstronautas.Mostrar();
                         break;
 
                     case 3:
-                        EditarAstronauta.Editar();
                         break;
 
                     case 4:
-                        EliminarAstronauta.Eliminar();
                         break;
 
                     default:

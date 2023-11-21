@@ -44,6 +44,7 @@ namespace NPlanetario.Frontend
                         break;
 
                     case 3:
+                        MenuObjetivo.MostrarMenu();
                         break;
 
                     case 4:
