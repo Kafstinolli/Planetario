@@ -12,7 +12,6 @@ public class MenuPrincipal
     public static void MostrarMenu()
     {
         MenuPlanetario menuPlanetario = new MenuPlanetario();
-        MenuViajesEspaciales menuViajesEspaciales = new MenuViajesEspaciales();
 
         Console.Clear();
 
@@ -33,7 +32,7 @@ public class MenuPrincipal
                     break;
 
                 case 2:
-                    menuViajesEspaciales.MostrarMenu();
+                    MenuViajesEspaciales.MostrarMenu();
                     break;
 
                 case 0:

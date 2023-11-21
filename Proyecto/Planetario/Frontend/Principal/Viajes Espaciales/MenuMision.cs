@@ -14,7 +14,7 @@ namespace Planetario.Frontend.Principal.Viajes_Espaciales
     {
         public static void MostrarMenu()
         {
-            int _opcionUsuario = 3;
+            int _opcionUsuario = 9;
 
             Console.Clear();
 

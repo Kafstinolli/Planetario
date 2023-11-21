@@ -15,9 +15,10 @@ namespace NPlanetario.Frontend
 {
     public class MenuViajesEspaciales
     {
-        private int _opcionUsuario = 9;
-        public void MostrarMenu()
+        public static void MostrarMenu()
         {
+            int _opcionUsuario = 9;
+
             Console.Clear();
 
             while (_opcionUsuario != 0)
