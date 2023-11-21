@@ -9,12 +9,13 @@ using Planetario.Frontend.Eliminar.Viajes_Espaciales;
 using Planetario.Frontend.Mostrar.Planetario;
 using Planetario.Frontend.Mostrar.Viajes_Espaciales;
 using Planetario.Frontend.Principal;
+using Planetario.Frontend.Principal.Viajes_Espaciales;
 
 namespace NPlanetario.Frontend
 {
     public class MenuViajesEspaciales
     {
-        private int _opcionUsuario = 3;
+        private int _opcionUsuario = 9;
         public void MostrarMenu()
         {
             Console.Clear();
@@ -22,12 +23,11 @@ namespace NPlanetario.Frontend
             while (_opcionUsuario != 0)
             {
                 Console.WriteLine("\nMenu Viajes Espaciales");
-                Console.WriteLine("1. Crear mision");
-                Console.WriteLine("2. Visualizar misiones");
-                Console.WriteLine("3. Editar mision");
-                Console.WriteLine("4. Eliminar mision");
-                Console.WriteLine("0. Salir del menu de misiones");
-                Console.WriteLine("Seleccione una opcion: ");
+                Console.WriteLine("Seleccione un modelo");
+                Console.WriteLine("1. Astronauta");
+                Console.WriteLine("2. Mision");
+                Console.WriteLine("3. Objetivo");
+                Console.WriteLine("4. Profesion");
 
                 _opcionUsuario = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
@@ -35,23 +35,19 @@ namespace NPlanetario.Frontend
                 switch (_opcionUsuario)
                 {
                     case 1:
-                        CrearMision.Crear();
                         break;
 
                     case 2:
-                        MostrarMisiones.Mostrar();
+                        MenuMision.MostrarMenu();
                         break;
 
                     case 3:
-                        EditarMision.Editar();
                         break;
 
                     case 4:
-                        EliminarMision.Eliminar();
                         break;
 
                     case 0:
-                        MenuPrincipal.MostrarMenu();
                         break;
 
                     default:
