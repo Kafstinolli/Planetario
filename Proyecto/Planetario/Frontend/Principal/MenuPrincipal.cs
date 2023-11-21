@@ -6,13 +6,14 @@ namespace Planetario.Frontend.Principal;
 
 public class MenuPrincipal
 {
-    MenuPlanetario menuPlanetario = new MenuPlanetario();
-    MenuViajesEspaciales menuViajesEspaciales = new MenuViajesEspaciales();
 
-    private int _opcionUsuario = 9;
+    private static int _opcionUsuario = 9;
 
-    public void MostrarMenu()
+    public static void MostrarMenu()
     {
+        MenuPlanetario menuPlanetario = new MenuPlanetario();
+        MenuViajesEspaciales menuViajesEspaciales = new MenuViajesEspaciales();
+
         Console.Clear();
 
         while (_opcionUsuario != 0)

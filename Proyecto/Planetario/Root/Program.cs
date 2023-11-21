@@ -27,8 +27,6 @@ internal class Program
         //  loadBalancer.UPDATE(request, 2);
         //  loadBalancer.DELETE(request, 2);
 
-        MenuPrincipal menu = new MenuPrincipal();
-
-        menu.MostrarMenu();
+        MenuPrincipal.MostrarMenu();
     }
 }
