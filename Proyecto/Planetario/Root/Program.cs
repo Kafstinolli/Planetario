@@ -1,6 +1,6 @@
 ﻿using NPlanetario.Data;
 using NPlanetario.LoadBalancing;
-using NPlanetario.Frontend;
+using Planetario.Frontend.Principal;
 
 internal class Program
 {

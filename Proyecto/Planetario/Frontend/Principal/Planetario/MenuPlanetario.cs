@@ -6,14 +6,14 @@ using Planetario.Frontend.Mostrar.Planetario;
 using System.Collections;
 using System.Diagnostics;
 
-namespace NPlanetario.Frontend;
+namespace Planetario.Frontend.Principal.Planetario;
 
 public class MenuPlanetario
 {
     private int _opcionUsuario = 9;
     public void MostrarMenu()
     {
-        Console.Clear();        
+        Console.Clear();
 
         while (_opcionUsuario != 0)
         {
@@ -31,12 +31,7 @@ public class MenuPlanetario
             switch (_opcionUsuario)
             {
                 case 1:
-                    string nombrePlanetario;
-
-                    Console.WriteLine("Introduzca el nombre del planetario");
-                    nombrePlanetario = Console.ReadLine();
-
-                    CrearPlanetario.Crear(nombrePlanetario);
+                    CrearPlanetario.Crear();
                     break;
 
                 case 2:
