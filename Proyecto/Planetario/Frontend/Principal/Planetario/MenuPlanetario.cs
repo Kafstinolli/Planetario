@@ -2,6 +2,7 @@ using NPlanetario.Backend.BPlanetario;
 using NPlanetario.Data.DPlanetario;
 using NPlanetario.LoadBalancing;
 using Planetario.Frontend.Crear.Planetario;
+using Planetario.Frontend.Editrar.Planetario;
 using Planetario.Frontend.Eliminar.Planetario;
 using Planetario.Frontend.Mostrar.Planetario;
 using System.Collections;
@@ -40,6 +41,7 @@ public class MenuPlanetario
                     break;
 
                 case 3:
+                    EditarPlanetario.Editar();
                     break;
 
                 case 4:

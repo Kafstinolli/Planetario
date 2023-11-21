@@ -176,7 +176,7 @@ public class LoadBalancer
             switch (request.Model)
             {
                 case "planeta":
-                    _planetarioController.Edit(_planetarioServer, request.Query, id);
+                    _planetaController.Edit(_planetarioServer, request.Query, id);
                     break;
                 case "satelite":
                     _sateliteController.Edit(_planetarioServer, request.Query, id);
