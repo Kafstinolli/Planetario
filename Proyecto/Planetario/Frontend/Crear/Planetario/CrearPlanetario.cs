@@ -12,7 +12,7 @@ namespace Planetario.Frontend.Crear.Planetario
 
         public static void Crear()
         {
-            LoadBalancer _loadBalancer = new LoadBalancer();
+            LoadBalancer loadBalancer = new LoadBalancer();
 
             string nombrePlanetario;
 
@@ -20,7 +20,7 @@ namespace Planetario.Frontend.Crear.Planetario
             nombrePlanetario = Console.ReadLine();
 
             Request request = new Request($"INSERT INTO Planetario (Planetario_Nombre) VALUES ('{nombrePlanetario}')", "planetario", "planetario");
-            _loadBalancer.INSERT(request);
+            loadBalancer.INSERT(request);
         }
     }
 }
