@@ -47,6 +47,7 @@ namespace Planetario.Frontend.Principal.Viajes_Espaciales
                         break;
 
                     case 4:
+                        EliminarAstronauta.Eliminar();
                         break;
 
                     case 0:
