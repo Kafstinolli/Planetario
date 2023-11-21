@@ -1,7 +1,8 @@
 using NPlanetario.Backend.BPlanetario;
 using NPlanetario.Data.DPlanetario;
 using NPlanetario.LoadBalancing;
-using Planetario.Frontend;
+using Planetario.Frontend.Crear.Planetario;
+using Planetario.Frontend.Mostrar.Planetario;
 using System.Collections;
 using System.Diagnostics;
 

@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Planetario.Frontend
+namespace Planetario.Frontend.Mostrar.Planetario
 {
     public class MostrarPlanetarios
     {
         public static void Mostrar()
         {
             LoadBalancer _loadBalancer = new LoadBalancer();
-            
+
             Request request = new Request("SELECT  Planetario_Id, Planetario_Nombre FROM Planetario", "planetario", "planetario");
             _loadBalancer.SELECT(request);
         }
