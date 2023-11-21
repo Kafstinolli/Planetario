@@ -53,8 +53,7 @@ public class MenuPlanetario
                     break;
 
                 default:
-                    // MenuPrincipal menuPrincipal = new MenuPrincipal();
-                    // menuPrincipal.MostrarMenuPrincipal();
+                    MostrarMenu();
                     break;
             }
         }
