@@ -2,6 +2,7 @@
 using Planetario.Frontend.Editrar.Planetario;
 using Planetario.Frontend.Eliminar.Planetario;
 using Planetario.Frontend.Mostrar.Planetario;
+using Sateliterio.Frontend.Crear.Sateliterio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,7 @@ namespace Planetario.Frontend.Principal.Planetario
                 switch (_opcionUsuario)
                 {
                     case 1:
+                        CrearSatelite.Crear();
                         break;
 
                     case 2:
