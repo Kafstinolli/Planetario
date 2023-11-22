@@ -25,6 +25,5 @@ namespace Planetario.Frontend.Crear.Viajes_Espaciales
             Request request = new Request($"INSERT INTO Astronauta (Astronauta_Nombre, Astronauta_ProfesionId) VALUES ('{nombreAstronauta}', {profesionId})", "viajesEspaciales", "astronauta");
             loadBalancer.INSERT(request);
         }
-
     }
 }
