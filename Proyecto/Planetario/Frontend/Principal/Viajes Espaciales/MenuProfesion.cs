@@ -34,6 +34,7 @@ namespace Planetario.Frontend.Principal.Viajes_Espaciales
                 switch (_opcionUsuario)
                 {
                     case 1:
+                        CrearProfesion.Crear();
                         break;
 
                     case 2:
