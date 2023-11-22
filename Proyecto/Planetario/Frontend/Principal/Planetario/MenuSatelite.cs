@@ -1,4 +1,7 @@
-﻿using Planetario.Frontend.Principal.Viajes_Espaciales;
+﻿using Planetario.Frontend.Crear.Planetario;
+using Planetario.Frontend.Editrar.Planetario;
+using Planetario.Frontend.Eliminar.Planetario;
+using Planetario.Frontend.Mostrar.Planetario;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Planetario.Frontend.Principal.Planetario
 {
-    public class MenuPlanetarioP
+    public class MenuSatelite
     {
         public static void MostrarMenu()
         {
@@ -17,12 +20,13 @@ namespace Planetario.Frontend.Principal.Planetario
 
             while (_opcionUsuario != 0)
             {
-                Console.WriteLine("\nMenu Planetario");
-                Console.WriteLine("Seleccione un modelo");
-                Console.WriteLine("1. Planeta");
-                Console.WriteLine("2. Planetario");
-                Console.WriteLine("3. Satelite");
-                Console.WriteLine("0. Salir del menu");
+                Console.WriteLine("\nMenu Satelite");
+                Console.WriteLine("1. Crear satelite");
+                Console.WriteLine("2. Visualizar satelites");
+                Console.WriteLine("3. Editar satelite");
+                Console.WriteLine("4. Eliminar satelite");
+                Console.WriteLine("0. Salir del menu satelite");
+                Console.WriteLine("Seleccione una opcion: ");
 
                 _opcionUsuario = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
@@ -30,15 +34,15 @@ namespace Planetario.Frontend.Principal.Planetario
                 switch (_opcionUsuario)
                 {
                     case 1:
-                        MenuPlaneta.MostrarMenu();
                         break;
 
                     case 2:
-                        MenuPlanetario.MostrarMenu();
                         break;
 
                     case 3:
-                        MenuSatelite.MostrarMenu();
+                        break;
+
+                    case 4:
                         break;
 
                     case 0:
