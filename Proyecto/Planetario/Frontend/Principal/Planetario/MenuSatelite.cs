@@ -47,6 +47,7 @@ namespace Planetario.Frontend.Principal.Planetario
                         break;
 
                     case 4:
+                        EliminarSatelite.Eliminar();
                         break;
 
                     case 0:
