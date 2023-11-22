@@ -42,6 +42,7 @@ namespace Planetario.Frontend.Principal.Viajes_Espaciales
                         break;
 
                     case 3:
+                        EditarProfesion.Editar();
                         break;
 
                     case 4:
