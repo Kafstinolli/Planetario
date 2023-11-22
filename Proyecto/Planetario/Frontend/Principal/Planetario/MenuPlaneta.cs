@@ -42,6 +42,7 @@ namespace Planetario.Frontend.Principal.Planetario
                         break;
 
                     case 3:
+                        EditarPlaneta.Editar();
                         break;
 
                     case 4:

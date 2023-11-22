@@ -22,7 +22,7 @@ public class PlanetaController
 
         foreach (Planeta planeta in planetas)
         {
-            Console.WriteLine($"| {planeta.Nombre} | {planeta.DistanciaSol} | {planeta.PeriodoOrbital} | {planeta.VelocidadOrbital} | {planeta.InclinacionOrbital} |");
+            Console.WriteLine($"| {planeta.Id} | {planeta.Nombre} | {planeta.DistanciaSol} | {planeta.PeriodoOrbital} | {planeta.VelocidadOrbital} | {planeta.InclinacionOrbital} |");
         }
     }
 
