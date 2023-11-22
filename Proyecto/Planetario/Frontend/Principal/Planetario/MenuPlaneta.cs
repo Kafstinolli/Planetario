@@ -46,6 +46,7 @@ namespace Planetario.Frontend.Principal.Planetario
                         break;
 
                     case 4:
+                        EliminarPlaneta.Eliminar();
                         break;
 
                     case 0:
