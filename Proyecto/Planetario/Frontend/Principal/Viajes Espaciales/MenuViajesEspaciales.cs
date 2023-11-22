@@ -1,6 +1,4 @@
-﻿
-
-using Planetario.Frontend.Crear.Planetario;
+﻿using Planetario.Frontend.Crear.Planetario;
 using Planetario.Frontend.Crear.Viajes_Espaciales;
 using Planetario.Frontend.Editrar.Planetario;
 using Planetario.Frontend.Editrar.Viajes_Espaciales;
@@ -29,6 +27,7 @@ namespace NPlanetario.Frontend
                 Console.WriteLine("2. Mision");
                 Console.WriteLine("3. Objetivo");
                 Console.WriteLine("4. Profesion");
+                Console.WriteLine("0. Salir del menu");
 
                 _opcionUsuario = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
@@ -48,6 +47,7 @@ namespace NPlanetario.Frontend
                         break;
 
                     case 4:
+                        MenuProfesion.MostrarMenu();
                         break;
 
                     case 0:
