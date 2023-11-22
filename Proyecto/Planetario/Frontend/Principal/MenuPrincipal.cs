@@ -11,8 +11,6 @@ public class MenuPrincipal
 
     public static void MostrarMenu()
     {
-        MenuPlanetario menuPlanetario = new MenuPlanetario();
-
         Console.Clear();
 
         while (_opcionUsuario != 0)
@@ -28,7 +26,7 @@ public class MenuPrincipal
             switch (_opcionUsuario)
             {
                 case 1:
-                    menuPlanetario.MostrarMenu();
+                    MenuPlanetario.MostrarMenu();
                     break;
 
                 case 2:

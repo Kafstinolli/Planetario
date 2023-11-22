@@ -12,9 +12,10 @@ namespace Planetario.Frontend.Principal.Planetario;
 
 public class MenuPlanetario
 {
-    private int _opcionUsuario = 9;
-    public void MostrarMenu()
+    public static void MostrarMenu()
     {
+        int _opcionUsuario = 9;
+
         Console.Clear();
 
         while (_opcionUsuario != 0)
