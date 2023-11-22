@@ -34,6 +34,7 @@ namespace Planetario.Frontend.Principal.Planetario
                 switch (_opcionUsuario)
                 {
                     case 1:
+                        CrearPlaneta.Crear();
                         break;
 
                     case 2:
