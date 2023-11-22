@@ -27,7 +27,7 @@ namespace NPlanetario.Backend.BPlanetario
 
             foreach (Satelite satelite in satelites)
             {
-                Console.WriteLine($"| {satelite.Nombre} | {satelite.Excentricidad} | {satelite.PeriodoOrbital} | {satelite.InclinacionOrbital} |");
+                Console.WriteLine($"| {satelite.Id} | {satelite.Nombre} | {satelite.Excentricidad} | {satelite.PeriodoOrbital} | {satelite.InclinacionOrbital} |");
             }
         }
 
