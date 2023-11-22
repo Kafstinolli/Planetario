@@ -26,7 +26,7 @@ public class MenuPrincipal
             switch (_opcionUsuario)
             {
                 case 1:
-                    MenuPlanetario.MostrarMenu();
+                    MenuPlanetarioP.MostrarMenu();
                     break;
 
                 case 2:

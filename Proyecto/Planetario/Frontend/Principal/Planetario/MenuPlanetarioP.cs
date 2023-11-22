@@ -19,7 +19,7 @@ namespace Planetario.Frontend.Principal.Planetario
             {
                 Console.WriteLine("\nMenu Planetario");
                 Console.WriteLine("Seleccione un modelo");
-                Console.WriteLine("1.Planeta");
+                Console.WriteLine("1. Planeta");
                 Console.WriteLine("2. Planetario");
                 Console.WriteLine("3. Satelite");
                 Console.WriteLine("0. Salir del menu");
@@ -30,9 +30,11 @@ namespace Planetario.Frontend.Principal.Planetario
                 switch (_opcionUsuario)
                 {
                     case 1:
+                        MenuPlaneta.MostrarMenu();
                         break;
 
                     case 2:
+                        MenuPlanetario.MostrarMenu();
                         break;
 
                     case 3:
