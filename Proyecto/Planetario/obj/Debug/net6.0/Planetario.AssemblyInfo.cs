@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Planetario")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2e7303f686139fac07792f7ba833e2e84302ba2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+038d71ea82d478c755533e7a0d61f688a500f627")]
 [assembly: System.Reflection.AssemblyProductAttribute("Planetario")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Planetario")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
