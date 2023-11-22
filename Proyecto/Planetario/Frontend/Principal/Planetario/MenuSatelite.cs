@@ -37,6 +37,7 @@ namespace Planetario.Frontend.Principal.Planetario
                         break;
 
                     case 2:
+                        MostrarSatelites.Mostrar();
                         break;
 
                     case 3:
