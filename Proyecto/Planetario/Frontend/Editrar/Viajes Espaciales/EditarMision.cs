@@ -25,7 +25,7 @@ namespace Planetario.Frontend.Editrar.Viajes_Espaciales
 
             idMision = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Seleccione la propiedad que desea eliminar:");
+            Console.WriteLine("Seleccione la propiedad que desea editar:");
             Console.WriteLine("1. Nombre");
             Console.WriteLine("2. Fecha");
             Console.WriteLine("3. Astronauta");

@@ -24,7 +24,7 @@ namespace Planetario.Frontend.Editrar.Viajes_Espaciales
 
             idAstronauta = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Seleccione la propiedad que desea eliminar:");
+            Console.WriteLine("Seleccione la propiedad que desea editar:");
             Console.WriteLine("1. Nombre");
             Console.WriteLine("2. Profesion");
 
