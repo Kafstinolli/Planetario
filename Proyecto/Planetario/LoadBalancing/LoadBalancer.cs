@@ -53,7 +53,7 @@ public class LoadBalancer
             switch (request.Model)
             {
                 case "planeta":
-                    _planetarioController.Show(_planetarioServer, request.Query);
+                    _planetaController.Show(_planetarioServer, request.Query);
                     break;
                 case "satelite":
                     _sateliteController.Show(_planetarioServer, request.Query);
@@ -111,7 +111,7 @@ public class LoadBalancer
             switch (request.Model)
             {
                 case "planeta":
-                    _planetarioController.Add(_planetarioServer, request.Query);
+                    _planetaController.Add(_planetarioServer, request.Query);
                     break;
                 case "satelite":
                     _sateliteController.Add(_planetarioServer, request.Query);
@@ -234,7 +234,7 @@ public class LoadBalancer
             switch (request.Model)
             {
                 case "planeta":
-                    _planetarioController.Remove(_planetarioServer, request.Query, id);
+                    _planetaController.Remove(_planetarioServer, request.Query, id);
                     break;
                 case "satelite":
                     _sateliteController.Remove(_planetarioServer, request.Query, id);
