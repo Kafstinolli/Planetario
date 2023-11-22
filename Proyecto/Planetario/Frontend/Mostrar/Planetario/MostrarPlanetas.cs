@@ -40,6 +40,10 @@ namespace Planetario.Frontend.Mostrar.Planetario
                         MostrarFiltroDistanciaSol();
                         break;
 
+                    case 3:
+                        MostrarFiltroInclinacionOrbital();
+                        break;
+
                     case 0:
                         break;
 
@@ -68,6 +72,19 @@ namespace Planetario.Frontend.Mostrar.Planetario
             distanciaSolFiltro = Convert.ToInt32(Console.ReadLine());
 
             Request request = new Request($"SELECT Planeta_Id, Planeta_Nombre, Planeta_DistanciaSol, Planeta_PeriodoOrbital, Planeta_VelocidadOrbital, Planeta_InclinacionOrbital FROM Planeta WHERE Planeta_DistanciaSol < {distanciaSolFiltro}", "planetario", "planeta");
+            _loadBalancer.SELECT(request);
+        }
+
+        private static void MostrarFiltroInclinacionOrbital()
+        {
+            LoadBalancer _loadBalancer = new LoadBalancer();
+
+            double inclinacionOrbitalFiltro;
+
+            Console.WriteLine("Digite la inclinacion orbital por la que va a filtrar la lista de planetas");
+            inclinacionOrbitalFiltro = Convert.ToDouble(Console.ReadLine());
+
+            Request request = new Request($"SELECT Planeta_Id, Planeta_Nombre, Planeta_DistanciaSol, Planeta_PeriodoOrbital, Planeta_VelocidadOrbital, Planeta_InclinacionOrbital FROM Planeta WHERE Planeta_InclinacionOrbital < {inclinacionOrbitalFiltro}", "planetario", "planeta");
             _loadBalancer.SELECT(request);
         }
     }
