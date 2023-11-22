@@ -57,6 +57,7 @@ public class MenuPlanetario
                     break;
 
                 case 6:
+                    PlanetarioPlaneta.MostrarMenu();
                     break;
 
                 case 0:
